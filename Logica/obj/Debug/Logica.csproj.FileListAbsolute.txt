@@ -1,0 +1,7 @@
+E:\Seat San Vicente N°1\Logica\bin\Debug\Logica.dll
+E:\Seat San Vicente N°1\Logica\bin\Debug\Logica.pdb
+E:\Seat San Vicente N°1\Logica\bin\Debug\Datos.dll
+E:\Seat San Vicente N°1\Logica\bin\Debug\Datos.pdb
+E:\Seat San Vicente N°1\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+E:\Seat San Vicente N°1\Logica\obj\Debug\Logica.dll
+E:\Seat San Vicente N°1\Logica\obj\Debug\Logica.pdb
