@@ -2,3 +2,9 @@ E:\Seat San Vicente N°1\Datos\bin\Debug\Datos.dll
 E:\Seat San Vicente N°1\Datos\bin\Debug\Datos.pdb
 E:\Seat San Vicente N°1\Datos\obj\Debug\Datos.dll
 E:\Seat San Vicente N°1\Datos\obj\Debug\Datos.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\bin\Debug\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\bin\Debug\Datos.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.pdb

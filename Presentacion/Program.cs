@@ -17,7 +17,7 @@ namespace Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MatriculaFrm());
+            Application.Run(new PrincipalFrm());
         }
     }
 }
