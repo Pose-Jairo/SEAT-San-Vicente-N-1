@@ -26,7 +26,9 @@ namespace Diseño.Formularios
 
         private void OpenFormHijo(Form formHijo)
         {
-            FormActivo?.Close();
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+
             FormActivo = formHijo;
             FormActivo.TopLevel = false;
             FormActivo.FormBorderStyle = FormBorderStyle.None;
