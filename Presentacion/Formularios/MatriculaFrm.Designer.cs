@@ -77,32 +77,32 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabRegistroEstudiante = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvEstudiantes = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tbcRegistros.SuspendLayout();
             this.tabCargaEstudiante.SuspendLayout();
             this.panelCargaEstudiante.SuspendLayout();
             this.tabRegistroEstudiante.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbcRegistros
@@ -629,21 +629,9 @@
             this.tabRegistroEstudiante.Text = "Registro de Estudiantes";
             this.tabRegistroEstudiante.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.textBox17);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(690, 65);
-            this.panel1.TabIndex = 0;
-            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.dgvEstudiantes);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 68);
@@ -651,24 +639,36 @@
             this.panel3.Size = new System.Drawing.Size(690, 318);
             this.panel3.TabIndex = 2;
             // 
-            // button1
+            // dgvEstudiantes
             // 
-            this.button1.Location = new System.Drawing.Point(197, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dgvEstudiantes.AllowUserToAddRows = false;
+            this.dgvEstudiantes.AllowUserToDeleteRows = false;
+            this.dgvEstudiantes.AllowUserToResizeColumns = false;
+            this.dgvEstudiantes.AllowUserToResizeRows = false;
+            this.dgvEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEstudiantes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvEstudiantes.Location = new System.Drawing.Point(0, 0);
+            this.dgvEstudiantes.Name = "dgvEstudiantes";
+            this.dgvEstudiantes.ReadOnly = true;
+            this.dgvEstudiantes.RowHeadersVisible = false;
+            this.dgvEstudiantes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvEstudiantes.Size = new System.Drawing.Size(690, 218);
+            this.dgvEstudiantes.TabIndex = 1;
             // 
-            // textBox17
+            // panel2
             // 
-            this.textBox17.Location = new System.Drawing.Point(12, 31);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(179, 20);
-            this.textBox17.TabIndex = 3;
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 218);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(690, 100);
+            this.panel2.TabIndex = 0;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(200)))), ((int)(((byte)(201)))));
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.comboBox8);
             this.groupBox1.Controls.Add(this.comboBox10);
@@ -685,50 +685,46 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consultas de estudiantes";
             // 
-            // panel2
+            // button2
             // 
-            this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 218);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(690, 100);
-            this.panel2.TabIndex = 0;
+            this.button2.Location = new System.Drawing.Point(419, 34);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Consultar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // comboBox8
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(690, 218);
-            this.dataGridView1.TabIndex = 1;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(207, 36);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(93, 21);
+            this.comboBox8.TabIndex = 5;
             // 
-            // label25
+            // comboBox10
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 20);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(42, 13);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Genero";
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Location = new System.Drawing.Point(306, 36);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(93, 21);
+            this.comboBox10.TabIndex = 7;
             // 
-            // label26
+            // comboBox9
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(105, 20);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(35, 13);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "Turno";
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(108, 36);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(93, 21);
+            this.comboBox9.TabIndex = 6;
             // 
-            // label27
+            // comboBox5
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(204, 20);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(80, 13);
-            this.label27.TabIndex = 2;
-            this.label27.Text = "Caracterizacion";
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(9, 36);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(93, 21);
+            this.comboBox5.TabIndex = 4;
             // 
             // label28
             // 
@@ -739,46 +735,45 @@
             this.label28.TabIndex = 3;
             this.label28.Text = "Categoria";
             // 
-            // comboBox5
+            // label27
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(9, 36);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(93, 21);
-            this.comboBox5.TabIndex = 4;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(204, 20);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(80, 13);
+            this.label27.TabIndex = 2;
+            this.label27.Text = "Caracterizacion";
             // 
-            // comboBox8
+            // label26
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(207, 36);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(93, 21);
-            this.comboBox8.TabIndex = 5;
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(105, 20);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(35, 13);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "Turno";
             // 
-            // comboBox9
+            // label25
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(108, 36);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(93, 21);
-            this.comboBox9.TabIndex = 6;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 20);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 13);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Genero";
             // 
-            // comboBox10
+            // panel1
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(306, 36);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(93, 21);
-            this.comboBox10.TabIndex = 7;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(419, 34);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Consultar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(200)))), ((int)(((byte)(201)))));
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.textBox17);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(690, 65);
+            this.panel1.TabIndex = 0;
             // 
             // label24
             // 
@@ -789,28 +784,45 @@
             this.label24.TabIndex = 4;
             this.label24.Text = "Buscador";
             // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(12, 31);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(179, 20);
+            this.textBox17.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(197, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 31);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // MatriculaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(48)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(59)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(728, 439);
             this.Controls.Add(this.tbcRegistros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MatriculaFrm";
             this.Text = "Matricula";
+            this.Load += new System.EventHandler(this.MatriculaFrm_Load);
             this.tbcRegistros.ResumeLayout(false);
             this.tabCargaEstudiante.ResumeLayout(false);
             this.panelCargaEstudiante.ResumeLayout(false);
             this.panelCargaEstudiante.PerformLayout();
             this.tabRegistroEstudiante.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -870,7 +882,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEstudiantes;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button2;

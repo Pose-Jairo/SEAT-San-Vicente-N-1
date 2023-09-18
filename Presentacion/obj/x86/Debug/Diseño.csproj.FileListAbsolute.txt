@@ -23,3 +23,5 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\De
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.LoginFmr.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Datos.pdb

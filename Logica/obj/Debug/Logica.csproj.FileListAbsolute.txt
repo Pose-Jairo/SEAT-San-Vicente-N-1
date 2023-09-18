@@ -9,8 +9,6 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.dll
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.pdb
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csproj.CopyComplete
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.dll
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.pdb
