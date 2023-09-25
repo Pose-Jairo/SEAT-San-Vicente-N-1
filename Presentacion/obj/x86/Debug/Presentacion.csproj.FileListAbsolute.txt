@@ -6,3 +6,18 @@ E:\Seat San Vicente N°1\Presentacion\bin\Debug\Presentacion.exe
 E:\Seat San Vicente N°1\Presentacion\bin\Debug\Presentacion.pdb
 E:\Seat San Vicente N°1\Presentacion\obj\x86\Debug\Presentacion.exe
 E:\Seat San Vicente N°1\Presentacion\obj\x86\Debug\Presentacion.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Presentacion.exe
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Presentacion.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Logica.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Logica.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Datos.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csprojResolveAssemblyReference.cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.LoginFmr.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MatriculaFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Properties.Resources.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.GenerateResource.Cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MenuFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources

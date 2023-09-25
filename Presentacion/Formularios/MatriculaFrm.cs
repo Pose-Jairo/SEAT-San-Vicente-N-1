@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Logica.Negocio;
 
@@ -26,6 +21,21 @@ namespace Presentacion.Formularios
         {
             dgvEstudiantes.DataSource = metodos.Actualizar(Tabla, consulta);
             dgvEstudiantes.ClearSelection();
+
         }
+
+        private void btnCargaEstudiante_Click(object sender, EventArgs e)
+        {
+            if (metodos.Alta == true)
+            {
+                dgvEstudiantes.DataSource = metodos.Actualizar(Tabla, consulta);
+            }
+            else
+            {
+                DialogResult error = MessageBox.Show("Error en el procedimiento...", "Error!!!"
+                , MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

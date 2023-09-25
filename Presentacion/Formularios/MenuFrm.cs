@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Diseño.Formularios
+namespace Presentacion.Formularios
 {
     public partial class MenuFrm : Form
     {

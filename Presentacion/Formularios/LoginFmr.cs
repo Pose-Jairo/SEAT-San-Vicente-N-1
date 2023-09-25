@@ -15,5 +15,15 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "1234" & txtPassword.Text == "1234")
+            {
+                PrincipalFrm principal = new PrincipalFrm();
+                this.Hide();
+                principal.Show();
+            }
+        }
     }
 }
