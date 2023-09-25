@@ -26,6 +26,21 @@ namespace Presentacion.Formularios
         {
             dgvEstudiantes.DataSource = metodos.Actualizar(Tabla, consulta);
             dgvEstudiantes.ClearSelection();
+
         }
+
+        private void btnCargaEstudiante_Click(object sender, EventArgs e)
+        {
+            if (metodos.Alta == true)
+            {
+                dgvEstudiantes.DataSource = metodos.Actualizar(Tabla, consulta);
+            }
+            else
+            {
+                DialogResult error = MessageBox.Show("Error en el procedimiento...", "Error!!!"
+                , MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
