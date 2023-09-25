@@ -3,7 +3,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Diseño.Formularios
+namespace Presentacion.Formularios
 {
     public partial class PrincipalFrm : Form
     {

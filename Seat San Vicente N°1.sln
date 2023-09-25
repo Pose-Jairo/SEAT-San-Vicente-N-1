@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{0E65D8E4-E2D4-43DC-8C10-9B76B590AD60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diseño", "Presentacion\Diseño.csproj", "{FD391503-26E4-4B8D-B5DD-28F5E81B750D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{FD391503-26E4-4B8D-B5DD-28F5E81B750D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{92D2BAA6-5086-4656-9CAE-929CE8F6BB48} = {92D2BAA6-5086-4656-9CAE-929CE8F6BB48}
 	EndProjectSection

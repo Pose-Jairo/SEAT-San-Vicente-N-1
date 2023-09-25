@@ -1,4 +1,4 @@
-﻿namespace Diseño.Formularios
+﻿namespace Presentacion.Formularios
 {
     partial class PrincipalFrm
     {
