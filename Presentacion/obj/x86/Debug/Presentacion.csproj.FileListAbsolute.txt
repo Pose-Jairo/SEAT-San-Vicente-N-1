@@ -21,3 +21,5 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\De
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MenuFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
