@@ -25,5 +25,27 @@ namespace Presentacion.Formularios
                 principal.Show();
             }
         }
+    
+        private void CambiarColor(object sender, MouseEventArgs e)
+        {
+            var pictureBox = ((PictureBox)sender);
+            pictureBox.BackColor = Color.FromArgb(128, 98, 214);
+        }
+
+        private void ColorNormal(object sender, EventArgs e)
+        {
+            var pictureBox = ((PictureBox)sender);
+            pictureBox.BackColor = Color.FromArgb(50, 38, 83);
+        }
+
+        private void pbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

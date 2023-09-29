@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\DocentesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DocentesFrm.Designer.cs">
+      <DependentUpon>DocentesFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\LoginFmr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\DocentesFrm.resx">
+      <DependentUpon>DocentesFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\LoginFmr.resx">
       <DependentUpon>LoginFmr.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,6 +120,48 @@
       <Project>{92D2BAA6-5086-4656-9CAE-929CE8F6BB48}</Project>
       <Name>Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-multiply-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-preschool-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa de trabajo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa de trabajo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-school-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-menu-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-preschool-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

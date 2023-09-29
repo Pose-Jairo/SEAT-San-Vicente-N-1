@@ -15,12 +15,15 @@ namespace Presentacion.Formularios
         Metodos metodos = new Metodos();
         DataTable Tabla = new DataTable();
 
-        string consulta = "SELECT * FROM Estudiante";
+        string consultaEstudiantes = "SELECT Cuil,Nombre,Apellido,Direccion,entreCalles,fechaIngreso,fechaNac From Estudiante";
+        string consultaResponsables = "SELECT Nombre,Apellido,Direccion,Ocupacion From Responsable";
 
         private void MatriculaFrm_Load(object sender, EventArgs e)
         {
-            dgvEstudiantes.DataSource = metodos.Actualizar(Tabla, consulta);
-            dgvEstudiantes.ClearSelection();
+            dgvMatricula.DataSource = metodos.Actualizar(Tabla, consultaEstudiantes);
+            dgvResponsables.DataSource = metodos.Actualizar(Tabla, consultaResponsables);
+            dgvMatricula.ClearSelection();
+            dgvResponsables.ClearSelection();
 
         }
 
@@ -28,7 +31,7 @@ namespace Presentacion.Formularios
         {
             if (metodos.Alta == true)
             {
-                dgvEstudiantes.DataSource = metodos.Actualizar(Tabla, consulta);
+                dgvMatricula.DataSource = metodos.Actualizar(Tabla, consultaEstudiantes);
             }
             else
             {

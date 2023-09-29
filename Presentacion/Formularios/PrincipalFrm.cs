@@ -14,7 +14,7 @@ namespace Presentacion.Formularios
 
         private void PrincipalFrm_Load(object sender, EventArgs e)
         {
-            //SeleccionButtons(btnMenu, null);
+            SeleccionButtons(btnMenu, null);
         }
 
         private Form FormActivo = null;
@@ -24,10 +24,10 @@ namespace Presentacion.Formularios
         private void SeleccionButtons(object sender, EventArgs e)
         {
             if (BotonAnterior != null)
-                BotonAnterior.BackColor = Color.FromArgb(35, 70, 71);
+                BotonAnterior.BackColor = Color.FromArgb(128, 98, 214);
 
             var button = ((Button)sender);
-            button.BackColor = Color.FromArgb(94, 145, 169);
+            button.BackColor = Color.FromArgb(90, 69, 150);
             BotonAnterior = button;
             AbrirFormulario(button.Name);
         }
@@ -41,6 +41,9 @@ namespace Presentacion.Formularios
                     break;
                 case "btnMatricula":
                     OpenFormHijo(new MatriculaFrm());
+                    break;
+                case "btnDocentes":
+                     OpenFormHijo(new DocentesFrm());
                     break;
             }
         }
@@ -60,5 +63,40 @@ namespace Presentacion.Formularios
             FormActivo.Show();
         }
 
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            pbMaximizar.Visible = false;
+            pbTamañoNormal.Visible = true;
+        }
+
+        private void pbTamañoNormal_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            pbTamañoNormal.Visible = false;
+            pbMaximizar.Visible = true;
+        }
+
+        private void pbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void CambiarColor(object sender, MouseEventArgs e)
+        {
+            var pintureBox = ((PictureBox)sender);
+            pintureBox.BackColor = Color.FromArgb(128, 98, 214);
+        }
+
+        private void ColorNormal(object sender, EventArgs e)
+        {
+            var pintureBox = ((PictureBox)sender);
+            pintureBox.BackColor = Color.FromArgb(50, 38, 83);
+        }
     }
 }
