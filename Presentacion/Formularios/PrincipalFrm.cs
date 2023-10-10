@@ -11,7 +11,7 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
-
+        
         private void PrincipalFrm_Load(object sender, EventArgs e)
         {
             SeleccionButtons(btnMenu, null);

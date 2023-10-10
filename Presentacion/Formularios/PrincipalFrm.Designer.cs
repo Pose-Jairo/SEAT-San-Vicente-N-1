@@ -63,7 +63,7 @@
             this.panelDerecha.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelDerecha.Location = new System.Drawing.Point(0, 0);
             this.panelDerecha.Name = "panelDerecha";
-            this.panelDerecha.Size = new System.Drawing.Size(220, 600);
+            this.panelDerecha.Size = new System.Drawing.Size(200, 600);
             this.panelDerecha.TabIndex = 0;
             // 
             // panelBotones
@@ -75,7 +75,7 @@
             this.panelBotones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBotones.Location = new System.Drawing.Point(0, 220);
             this.panelBotones.Name = "panelBotones";
-            this.panelBotones.Size = new System.Drawing.Size(220, 380);
+            this.panelBotones.Size = new System.Drawing.Size(200, 380);
             this.panelBotones.TabIndex = 0;
             // 
             // btnDocentes
@@ -88,7 +88,7 @@
             this.btnDocentes.Image = global::Presentacion.Properties.Resources.icons8_people_32;
             this.btnDocentes.Location = new System.Drawing.Point(0, 160);
             this.btnDocentes.Name = "btnDocentes";
-            this.btnDocentes.Size = new System.Drawing.Size(220, 80);
+            this.btnDocentes.Size = new System.Drawing.Size(200, 80);
             this.btnDocentes.TabIndex = 2;
             this.btnDocentes.Text = "Docentes";
             this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -106,7 +106,7 @@
             this.btnMatricula.Image = global::Presentacion.Properties.Resources.icons8_book_32;
             this.btnMatricula.Location = new System.Drawing.Point(0, 80);
             this.btnMatricula.Name = "btnMatricula";
-            this.btnMatricula.Size = new System.Drawing.Size(220, 80);
+            this.btnMatricula.Size = new System.Drawing.Size(200, 80);
             this.btnMatricula.TabIndex = 3;
             this.btnMatricula.Text = " Matricula";
             this.btnMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -125,7 +125,7 @@
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMenu.Size = new System.Drawing.Size(220, 80);
+            this.btnMenu.Size = new System.Drawing.Size(200, 80);
             this.btnMenu.TabIndex = 0;
             this.btnMenu.Text = "Menu";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,7 +143,7 @@
             this.panelPortaLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPortaLogo.Location = new System.Drawing.Point(0, 0);
             this.panelPortaLogo.Name = "panelPortaLogo";
-            this.panelPortaLogo.Size = new System.Drawing.Size(220, 220);
+            this.panelPortaLogo.Size = new System.Drawing.Size(200, 220);
             this.panelPortaLogo.TabIndex = 0;
             // 
             // panelLogo2
@@ -169,9 +169,9 @@
             // 
             this.panelLogo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLogo.Location = new System.Drawing.Point(25, 30);
+            this.panelLogo.Location = new System.Drawing.Point(25, 40);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(170, 170);
+            this.panelLogo.Size = new System.Drawing.Size(150, 150);
             this.panelLogo.TabIndex = 2;
             // 
             // panel1
@@ -180,7 +180,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 216);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 4);
+            this.panel1.Size = new System.Drawing.Size(200, 4);
             this.panel1.TabIndex = 1;
             // 
             // panelEncabezado
@@ -191,16 +191,16 @@
             this.panelEncabezado.Controls.Add(this.pbMaximizar);
             this.panelEncabezado.Controls.Add(this.pbTamañoNormal);
             this.panelEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelEncabezado.Location = new System.Drawing.Point(220, 0);
+            this.panelEncabezado.Location = new System.Drawing.Point(200, 0);
             this.panelEncabezado.Name = "panelEncabezado";
-            this.panelEncabezado.Size = new System.Drawing.Size(804, 30);
+            this.panelEncabezado.Size = new System.Drawing.Size(824, 30);
             this.panelEncabezado.TabIndex = 1;
             // 
             // pbMinimizar
             // 
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Image = global::Presentacion.Properties.Resources.icons8_minimize_48;
-            this.pbMinimizar.Location = new System.Drawing.Point(653, 1);
+            this.pbMinimizar.Location = new System.Drawing.Point(673, 1);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(50, 25);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -214,7 +214,7 @@
             // 
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Image = global::Presentacion.Properties.Resources.icons8_multiply_48;
-            this.pbSalir.Location = new System.Drawing.Point(753, 1);
+            this.pbSalir.Location = new System.Drawing.Point(773, 1);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(50, 25);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -228,7 +228,7 @@
             // 
             this.pbMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMaximizar.Image = global::Presentacion.Properties.Resources.Mesa_de_trabajo_1;
-            this.pbMaximizar.Location = new System.Drawing.Point(703, 1);
+            this.pbMaximizar.Location = new System.Drawing.Point(723, 1);
             this.pbMaximizar.Name = "pbMaximizar";
             this.pbMaximizar.Size = new System.Drawing.Size(50, 25);
             this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -242,7 +242,7 @@
             // 
             this.pbTamañoNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbTamañoNormal.Image = global::Presentacion.Properties.Resources.Mesa_de_trabajo_2;
-            this.pbTamañoNormal.Location = new System.Drawing.Point(703, 1);
+            this.pbTamañoNormal.Location = new System.Drawing.Point(723, 1);
             this.pbTamañoNormal.Name = "pbTamañoNormal";
             this.pbTamañoNormal.Size = new System.Drawing.Size(50, 25);
             this.pbTamañoNormal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -256,16 +256,16 @@
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(220, 30);
+            this.panelContenedor.Location = new System.Drawing.Point(200, 30);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(804, 570);
+            this.panelContenedor.Size = new System.Drawing.Size(824, 570);
             this.panelContenedor.TabIndex = 2;
             // 
             // PrincipalFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1024, 600);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelEncabezado);

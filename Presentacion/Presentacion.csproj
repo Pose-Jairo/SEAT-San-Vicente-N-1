@@ -54,6 +54,24 @@
     <Compile Include="Formularios\DocentesFrm.Designer.cs">
       <DependentUpon>DocentesFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ListaDocentesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListaDocentesFrm.Designer.cs">
+      <DependentUpon>ListaDocentesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListaEstudiantesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListaEstudiantesFrm.Designer.cs">
+      <DependentUpon>ListaEstudiantesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListaResponsablesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListaResponsablesFrm.Designer.cs">
+      <DependentUpon>ListaResponsablesFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\LoginFmr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,18 @@
     <Compile Include="Formularios\MenuFrm.Designer.cs">
       <DependentUpon>MenuFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\NuevoDocenteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\NuevoDocenteFrm.Designer.cs">
+      <DependentUpon>NuevoDocenteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\NuevoEstudianteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\NuevoEstudianteFrm.Designer.cs">
+      <DependentUpon>NuevoEstudianteFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\PrincipalFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +113,15 @@
     <EmbeddedResource Include="Formularios\DocentesFrm.resx">
       <DependentUpon>DocentesFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListaDocentesFrm.resx">
+      <DependentUpon>ListaDocentesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListaEstudiantesFrm.resx">
+      <DependentUpon>ListaEstudiantesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ListaResponsablesFrm.resx">
+      <DependentUpon>ListaResponsablesFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\LoginFmr.resx">
       <DependentUpon>LoginFmr.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MenuFrm.resx">
       <DependentUpon>MenuFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\NuevoDocenteFrm.resx">
+      <DependentUpon>NuevoDocenteFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\NuevoEstudianteFrm.resx">
+      <DependentUpon>NuevoEstudianteFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>

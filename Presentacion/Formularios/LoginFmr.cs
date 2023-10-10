@@ -31,7 +31,7 @@ namespace Presentacion.Formularios
             var pictureBox = ((PictureBox)sender);
             pictureBox.BackColor = Color.FromArgb(128, 98, 214);
         }
-
+      
         private void ColorNormal(object sender, EventArgs e)
         {
             var pictureBox = ((PictureBox)sender);

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFmr));
             this.panelEncabezadoLogin = new System.Windows.Forms.Panel();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.panelLogo2 = new System.Windows.Forms.Panel();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
@@ -44,14 +46,12 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.panelEncabezadoLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.panelLogin.SuspendLayout();
             this.panelEmail.SuspendLayout();
             this.panelPassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEncabezadoLogin
@@ -66,6 +66,34 @@
             this.panelEncabezadoLogin.Name = "panelEncabezadoLogin";
             this.panelEncabezadoLogin.Size = new System.Drawing.Size(330, 20);
             this.panelEncabezadoLogin.TabIndex = 0;
+            // 
+            // pbMinimizar
+            // 
+            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMinimizar.Image = global::Presentacion.Properties.Resources.icons8_minimize_48;
+            this.pbMinimizar.Location = new System.Drawing.Point(254, 1);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(35, 18);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMinimizar.TabIndex = 9;
+            this.pbMinimizar.TabStop = false;
+            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
+            this.pbMinimizar.MouseLeave += new System.EventHandler(this.ColorNormal);
+            this.pbMinimizar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColor);
+            // 
+            // pbSalir
+            // 
+            this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbSalir.Image = global::Presentacion.Properties.Resources.icons8_multiply_48;
+            this.pbSalir.Location = new System.Drawing.Point(294, 1);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(35, 18);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSalir.TabIndex = 8;
+            this.pbSalir.TabStop = false;
+            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
+            this.pbSalir.MouseLeave += new System.EventHandler(this.ColorNormal);
+            this.pbSalir.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColor);
             // 
             // panelLogo2
             // 
@@ -84,7 +112,7 @@
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(117, 13);
             this.labelTitulo.TabIndex = 7;
-            this.labelTitulo.Text = "SEAT Nº1 San Vicente";
+            this.labelTitulo.Text = "CEAT Nº1 San Vicente";
             // 
             // panelLogin
             // 
@@ -219,34 +247,6 @@
             this.lineShape2.Y1 = 290;
             this.lineShape2.Y2 = 290;
             // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimizar.Image = global::Presentacion.Properties.Resources.icons8_minimize_48;
-            this.pbMinimizar.Location = new System.Drawing.Point(254, 1);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(35, 18);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMinimizar.TabIndex = 9;
-            this.pbMinimizar.TabStop = false;
-            this.pbMinimizar.Click += new System.EventHandler(this.pbMinimizar_Click);
-            this.pbMinimizar.MouseLeave += new System.EventHandler(this.ColorNormal);
-            this.pbMinimizar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColor);
-            // 
-            // pbSalir
-            // 
-            this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSalir.Image = global::Presentacion.Properties.Resources.icons8_multiply_48;
-            this.pbSalir.Location = new System.Drawing.Point(294, 1);
-            this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(35, 18);
-            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSalir.TabIndex = 8;
-            this.pbSalir.TabStop = false;
-            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
-            this.pbSalir.MouseLeave += new System.EventHandler(this.ColorNormal);
-            this.pbSalir.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColor);
-            // 
             // LoginFmr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,14 +264,14 @@
             this.Text = "LoginFmr";
             this.panelEncabezadoLogin.ResumeLayout(false);
             this.panelEncabezadoLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
             this.panelEmail.ResumeLayout(false);
             this.panelEmail.PerformLayout();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);
 
         }
