@@ -37,6 +37,5 @@ namespace Logica.Negocio
             set { _alta = value; }
         }
 
-
     }
 }

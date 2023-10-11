@@ -7,14 +7,16 @@ namespace Presentacion.Formularios
 {
     public partial class PrincipalFrm : Form
     {
+        public static PrincipalFrm Instancia { get; private set; }
+
         public PrincipalFrm()
         {
             InitializeComponent();
+            Instancia = this;
         }
-        
+      
         private void PrincipalFrm_Load(object sender, EventArgs e)
-        {
-            SeleccionButtons(btnMenu, null);
+        {     
         }
 
         private Form FormActivo = null;
@@ -32,18 +34,24 @@ namespace Presentacion.Formularios
             AbrirFormulario(button.Name);
         }
 
-        private void AbrirFormulario(string name)
+        public void AbrirFormulario(string name)
         {
             switch (name)
-            {
-                case "btnMenu":
-                    OpenFormHijo(new MenuFrm());
-                    break;
+            {              
                 case "btnMatricula":
                     OpenFormHijo(new MatriculaFrm());
                     break;
                 case "btnDocentes":
                      OpenFormHijo(new DocentesFrm());
+                    break;
+                case "btnReportes":
+                    OpenFormHijo(new ReportesFrm());
+                    break;
+                case "btnAltaEstudiante":
+                    OpenFormHijo(new NuevoEstudianteFrm());
+                    break;    
+                case "btnAltaDocente":
+                    OpenFormHijo(new NuevoDocenteFrm());
                     break;
             }
         }
@@ -97,6 +105,12 @@ namespace Presentacion.Formularios
         {
             var pintureBox = ((PictureBox)sender);
             pintureBox.BackColor = Color.FromArgb(50, 38, 83);
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginFmr.Instancia.Show();
         }
     }
 }

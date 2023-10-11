@@ -31,20 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalFrm));
             this.panelDerecha = new System.Windows.Forms.Panel();
             this.panelBotones = new System.Windows.Forms.Panel();
-            this.btnDocentes = new System.Windows.Forms.Button();
-            this.btnMatricula = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.panelPortaLogo = new System.Windows.Forms.Panel();
-            this.panelLogo2 = new System.Windows.Forms.Panel();
             this.labelTitulo = new System.Windows.Forms.Label();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelEncabezado = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbSalir = new System.Windows.Forms.PictureBox();
             this.pbMaximizar = new System.Windows.Forms.PictureBox();
             this.pbTamañoNormal = new System.Windows.Forms.PictureBox();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnDocentes = new System.Windows.Forms.Button();
+            this.btnMatricula = new System.Windows.Forms.Button();
+            this.panelLogo2 = new System.Windows.Forms.Panel();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelDerecha.SuspendLayout();
             this.panelBotones.SuspendLayout();
             this.panelPortaLogo.SuspendLayout();
@@ -69,69 +70,15 @@
             // panelBotones
             // 
             this.panelBotones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
+            this.panelBotones.Controls.Add(this.btnCerrarSesion);
+            this.panelBotones.Controls.Add(this.btnReportes);
             this.panelBotones.Controls.Add(this.btnDocentes);
             this.panelBotones.Controls.Add(this.btnMatricula);
-            this.panelBotones.Controls.Add(this.btnMenu);
             this.panelBotones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBotones.Location = new System.Drawing.Point(0, 220);
             this.panelBotones.Name = "panelBotones";
             this.panelBotones.Size = new System.Drawing.Size(200, 380);
             this.panelBotones.TabIndex = 0;
-            // 
-            // btnDocentes
-            // 
-            this.btnDocentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
-            this.btnDocentes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDocentes.ForeColor = System.Drawing.Color.White;
-            this.btnDocentes.Image = global::Presentacion.Properties.Resources.icons8_people_32;
-            this.btnDocentes.Location = new System.Drawing.Point(0, 160);
-            this.btnDocentes.Name = "btnDocentes";
-            this.btnDocentes.Size = new System.Drawing.Size(200, 80);
-            this.btnDocentes.TabIndex = 2;
-            this.btnDocentes.Text = "Docentes";
-            this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDocentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDocentes.UseVisualStyleBackColor = false;
-            this.btnDocentes.Click += new System.EventHandler(this.SeleccionButtons);
-            // 
-            // btnMatricula
-            // 
-            this.btnMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
-            this.btnMatricula.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMatricula.ForeColor = System.Drawing.Color.White;
-            this.btnMatricula.Image = global::Presentacion.Properties.Resources.icons8_book_32;
-            this.btnMatricula.Location = new System.Drawing.Point(0, 80);
-            this.btnMatricula.Name = "btnMatricula";
-            this.btnMatricula.Size = new System.Drawing.Size(200, 80);
-            this.btnMatricula.TabIndex = 3;
-            this.btnMatricula.Text = " Matricula";
-            this.btnMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMatricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMatricula.UseVisualStyleBackColor = false;
-            this.btnMatricula.Click += new System.EventHandler(this.SeleccionButtons);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
-            this.btnMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.ForeColor = System.Drawing.Color.White;
-            this.btnMenu.Image = global::Presentacion.Properties.Resources.icons8_circled_menu_32;
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMenu.Size = new System.Drawing.Size(200, 80);
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.SeleccionButtons);
             // 
             // panelPortaLogo
             // 
@@ -146,15 +93,6 @@
             this.panelPortaLogo.Size = new System.Drawing.Size(200, 220);
             this.panelPortaLogo.TabIndex = 0;
             // 
-            // panelLogo2
-            // 
-            this.panelLogo2.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
-            this.panelLogo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLogo2.Location = new System.Drawing.Point(3, 5);
-            this.panelLogo2.Name = "panelLogo2";
-            this.panelLogo2.Size = new System.Drawing.Size(15, 15);
-            this.panelLogo2.TabIndex = 3;
-            // 
             // labelTitulo
             // 
             this.labelTitulo.AutoSize = true;
@@ -163,16 +101,7 @@
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(117, 13);
             this.labelTitulo.TabIndex = 4;
-            this.labelTitulo.Text = "SEAT Nº1 San Vicente";
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
-            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLogo.Location = new System.Drawing.Point(25, 40);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(150, 150);
-            this.panelLogo.TabIndex = 2;
+            this.labelTitulo.Text = "CEAT Nº1 San Vicente";
             // 
             // panel1
             // 
@@ -195,6 +124,30 @@
             this.panelEncabezado.Name = "panelEncabezado";
             this.panelEncabezado.Size = new System.Drawing.Size(824, 30);
             this.panelEncabezado.TabIndex = 1;
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 30);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(824, 570);
+            this.panelContenedor.TabIndex = 2;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 350);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(200, 30);
+            this.btnCerrarSesion.TabIndex = 5;
+            this.btnCerrarSesion.Text = "Cerrar Sesion";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // pbMinimizar
             // 
@@ -252,14 +205,77 @@
             this.pbTamañoNormal.MouseLeave += new System.EventHandler(this.ColorNormal);
             this.pbTamañoNormal.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColor);
             // 
-            // panelContenedor
+            // btnReportes
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 30);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(824, 570);
-            this.panelContenedor.TabIndex = 2;
+            this.btnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
+            this.btnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Image = global::Presentacion.Properties.Resources.icons8_people_32;
+            this.btnReportes.Location = new System.Drawing.Point(0, 160);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(200, 80);
+            this.btnReportes.TabIndex = 4;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.SeleccionButtons);
+            // 
+            // btnDocentes
+            // 
+            this.btnDocentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
+            this.btnDocentes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocentes.ForeColor = System.Drawing.Color.White;
+            this.btnDocentes.Image = global::Presentacion.Properties.Resources.icons8_people_32;
+            this.btnDocentes.Location = new System.Drawing.Point(0, 80);
+            this.btnDocentes.Name = "btnDocentes";
+            this.btnDocentes.Size = new System.Drawing.Size(200, 80);
+            this.btnDocentes.TabIndex = 2;
+            this.btnDocentes.Text = "Docentes";
+            this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDocentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDocentes.UseVisualStyleBackColor = false;
+            this.btnDocentes.Click += new System.EventHandler(this.SeleccionButtons);
+            // 
+            // btnMatricula
+            // 
+            this.btnMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(98)))), ((int)(((byte)(214)))));
+            this.btnMatricula.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnMatricula.Image = global::Presentacion.Properties.Resources.icons8_book_32;
+            this.btnMatricula.Location = new System.Drawing.Point(0, 0);
+            this.btnMatricula.Name = "btnMatricula";
+            this.btnMatricula.Size = new System.Drawing.Size(200, 80);
+            this.btnMatricula.TabIndex = 3;
+            this.btnMatricula.Text = " Matricula";
+            this.btnMatricula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnMatricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMatricula.UseVisualStyleBackColor = false;
+            this.btnMatricula.Click += new System.EventHandler(this.SeleccionButtons);
+            // 
+            // panelLogo2
+            // 
+            this.panelLogo2.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
+            this.panelLogo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelLogo2.Location = new System.Drawing.Point(3, 5);
+            this.panelLogo2.Name = "panelLogo2";
+            this.panelLogo2.Size = new System.Drawing.Size(15, 15);
+            this.panelLogo2.TabIndex = 3;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelLogo.Location = new System.Drawing.Point(25, 40);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(150, 150);
+            this.panelLogo.TabIndex = 2;
             // 
             // PrincipalFrm
             // 
@@ -296,7 +312,6 @@
         private System.Windows.Forms.Panel panelBotones;
         private System.Windows.Forms.Button btnDocentes;
         private System.Windows.Forms.Button btnMatricula;
-        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel panelEncabezado;
         private System.Windows.Forms.Panel panel1;
         protected System.Windows.Forms.Panel panelContenedor;
@@ -308,5 +323,7 @@
         private System.Windows.Forms.PictureBox pbSalir;
         private System.Windows.Forms.PictureBox pbMaximizar;
         private System.Windows.Forms.PictureBox pbTamañoNormal;
+        private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Button btnReportes;
     }
 }

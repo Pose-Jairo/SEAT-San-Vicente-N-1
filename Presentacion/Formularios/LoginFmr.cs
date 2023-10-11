@@ -11,17 +11,20 @@ namespace Presentacion.Formularios
 {
     public partial class LoginFmr : Form
     {
+        public static LoginFmr Instancia { get; private set; }
+
         public LoginFmr()
         {
             InitializeComponent();
+            Instancia = this;
         }
-
+      
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             if (txtEmail.Text == "1234" & txtPassword.Text == "1234")
             {
                 PrincipalFrm principal = new PrincipalFrm();
-                this.Hide();
+                Instancia.Hide();
                 principal.Show();
             }
         }

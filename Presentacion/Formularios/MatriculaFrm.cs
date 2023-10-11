@@ -2,6 +2,7 @@
 using System.Data;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using Presentacion.Formularios;
 using Logica.Negocio;
 
 namespace Presentacion.Formularios
@@ -12,12 +13,13 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
-
+        
         Metodos metodos = new Metodos();
         DataTable Tabla = new DataTable();
+        
 
-        private string consultaEstudiantes = "SELECT Cuil,Nombre,Apellido,Direccion,entreCalles,fechaIngreso,fechaNac From Estudiante";
-        private string consultaResponsables = "SELECT Nombre,Apellido,Direccion,Ocupacion From Responsable";
+       // private string consultaEstudiantes = "SELECT Cuil,Nombre,Apellido,Direccion,entreCalles,fechaIngreso,fechaNac From Estudiante";
+       // private string consultaResponsables = "SELECT Nombre,Apellido,Direccion,Ocupacion From Responsable";
 
         private void MatriculaFrm_Load(object sender, EventArgs e)
         {
@@ -47,6 +49,12 @@ namespace Presentacion.Formularios
                 
             };
             return listaObjetos;
+        }
+
+        private void BotonesClick(object sender, EventArgs e)
+        {
+            var button = ((Button)sender);
+            PrincipalFrm.Instancia.AbrirFormulario(button.Name);
         }
     }
 }

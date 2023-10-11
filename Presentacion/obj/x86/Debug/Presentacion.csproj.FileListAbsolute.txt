@@ -22,3 +22,9 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\De
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MenuFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.DocentesFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaDocentesFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaEstudiantesFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaResponsablesFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoDocenteFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoEstudianteFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ReportesFrm.resources
