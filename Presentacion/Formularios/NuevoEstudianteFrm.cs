@@ -15,5 +15,14 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
+
+        public List<Object> ListadeObjetos()
+        {
+            List<Object> listaObjetos = new List<object>
+            {
+
+            };
+            return listaObjetos;
+        }
     }
 }

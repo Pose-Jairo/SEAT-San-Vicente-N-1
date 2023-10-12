@@ -72,5 +72,18 @@ namespace Datos.Conexion
             Desconectar();
             return Resultado;
         }
+
+        public int ObtenerValor(string Consulta)
+        {
+            Conexion = new OleDbConnection(stringConexion);
+
+            Comando = new OleDbCommand(Consulta, Conexion);
+
+            int valorCampo;
+           
+            Conexion.Open();
+            valorCampo = (int)Comando.ExecuteScalar();
+            return valorCampo;
+}
     }
 }

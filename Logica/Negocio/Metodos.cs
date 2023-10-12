@@ -9,7 +9,7 @@ namespace Logica.Negocio
     {
         ConexionConBD BDConexion = new ConexionConBD();
         ABM abm = new ABM();
-
+        
         public DataTable Actualizar(DataTable Tabla, string consulta)
         {
             Tabla = new DataTable();
@@ -23,19 +23,26 @@ namespace Logica.Negocio
             return (Tabla);
         }
 
-        bool _alta = false;
-
-        public bool cadenaAlta()
-        {           
-            _alta = BDConexion.EjecutarConsulta(abm.Cadena);
-
-            return _alta;
-        }
-        public bool Alta
+        public int ConseguirNacionalidad(string nacionalidad)
         {
-            get { return _alta; }
-            set { _alta = value; }
+            int codNacionalidad = 0;
+
+            string cadenaNacionalidad = "SELECT Cod_nacion FROM Nacionalidad WHERE NomNacion=" + "'" + nacionalidad + "'";
+
+            codNacionalidad = BDConexion.ObtenerValor(cadenaNacionalidad);
+
+            return codNacionalidad;
         }
 
+        public int ConseguirLocalidad(string localidad)
+        {
+            int codLocalidad = 0;
+
+            string cadenaLocalidad = "SELECT Cod_post FROM Localidad WHERE NomLocal=" + "'" + localidad + "'";
+
+            codLocalidad = BDConexion.ObtenerValor(cadenaLocalidad);
+
+            return codLocalidad;
+        }
     }
 }
