@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Data;
 using Datos.Conexion;
-using Datos.Consultas;
 
 namespace Logica.Negocio
 {
     public class Metodos
     {
         ConexionConBD BDConexion = new ConexionConBD();
-        ABM abm = new ABM();
         
         public DataTable Actualizar(DataTable Tabla, string consulta)
         {

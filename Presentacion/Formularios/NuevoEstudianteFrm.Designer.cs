@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cmb_caract = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txt_obsDet = new System.Windows.Forms.TextBox();
@@ -57,7 +58,7 @@
             this.txtNombresEstudiante = new System.Windows.Forms.TextBox();
             this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btn_altaRegistrar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.btn_altaCancel = new System.Windows.Forms.Button();
             this.txtTelefono2 = new System.Windows.Forms.TextBox();
             this.txtTelefono1 = new System.Windows.Forms.TextBox();
@@ -68,11 +69,13 @@
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.txtApellidosResponsable = new System.Windows.Forms.TextBox();
             this.txtNombresResponsable = new System.Windows.Forms.TextBox();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.cmb_caract.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.gbFechaIngreso.SuspendLayout();
             this.gbFechaNacimiento.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
             // cmb_caract
@@ -440,7 +443,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.btn_altaRegistrar);
+            this.groupBox5.Controls.Add(this.btnRegistrar);
             this.groupBox5.Controls.Add(this.btn_altaCancel);
             this.groupBox5.Controls.Add(this.txtTelefono2);
             this.groupBox5.Controls.Add(this.txtTelefono1);
@@ -462,19 +465,22 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Datos del responsable";
             // 
-            // btn_altaRegistrar
+            // btnRegistrar
             // 
-            this.btn_altaRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_altaRegistrar.Location = new System.Drawing.Point(631, 144);
-            this.btn_altaRegistrar.Name = "btn_altaRegistrar";
-            this.btn_altaRegistrar.Size = new System.Drawing.Size(181, 56);
-            this.btn_altaRegistrar.TabIndex = 52;
-            this.btn_altaRegistrar.Text = "Registrar";
-            this.btn_altaRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistrar.Location = new System.Drawing.Point(631, 144);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(181, 56);
+            this.btnRegistrar.TabIndex = 52;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btn_altaCancel
             // 
             this.btn_altaCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_altaCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_altaCancel.Location = new System.Drawing.Point(476, 153);
             this.btn_altaCancel.Name = "btn_altaCancel";
             this.btn_altaCancel.Size = new System.Drawing.Size(131, 39);
@@ -592,6 +598,10 @@
             this.txtNombresResponsable.TabIndex = 34;
             this.txtNombresResponsable.Text = " Nombres";
             // 
+            // error
+            // 
+            this.error.ContainerControl = this;
+            // 
             // NuevoEstudianteFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -604,6 +614,7 @@
             this.Name = "NuevoEstudianteFrm";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "NuevoEstudianteFrm";
+            this.Load += new System.EventHandler(this.NuevoEstudianteFrm_Load);
             this.cmb_caract.ResumeLayout(false);
             this.cmb_caract.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -614,6 +625,7 @@
             this.gbFechaNacimiento.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -649,7 +661,7 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btn_altaRegistrar;
+        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btn_altaCancel;
         private System.Windows.Forms.TextBox txtTelefono2;
         private System.Windows.Forms.TextBox txtTelefono1;
@@ -660,5 +672,6 @@
         private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.TextBox txtApellidosResponsable;
         private System.Windows.Forms.TextBox txtNombresResponsable;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }
