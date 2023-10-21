@@ -15,5 +15,7 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
+
+   
     }
 }

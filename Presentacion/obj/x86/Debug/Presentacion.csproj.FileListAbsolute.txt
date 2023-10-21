@@ -6,6 +6,10 @@ E:\Seat San Vicente N°1\Presentacion\bin\Debug\Presentacion.exe
 E:\Seat San Vicente N°1\Presentacion\bin\Debug\Presentacion.pdb
 E:\Seat San Vicente N°1\Presentacion\obj\x86\Debug\Presentacion.exe
 E:\Seat San Vicente N°1\Presentacion\obj\x86\Debug\Presentacion.pdb
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Presentacion.exe
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Presentacion.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Logica.dll
@@ -13,23 +17,34 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Logica.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Datos.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csprojResolveAssemblyReference.cache
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.LoginFmr.resources
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MatriculaFrm.resources
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Properties.Resources.resources
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.GenerateResource.Cache
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MenuFrm.resources
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.DocentesFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaDocentesFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaEstudiantesFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaResponsablesFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.LoginFmr.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MatriculaFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarDocenteFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoDocenteFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoEstudianteFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ReportesFrm.resources
-C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
-C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
-E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarDocenteFrm.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Properties.Resources.resources
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.GenerateResource.Cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.exe
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.pdb
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.AssemblyReference.cache
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.DocentesFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaDocentesFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaEstudiantesFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaResponsablesFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.LoginFmr.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MatriculaFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarDocenteFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoDocenteFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoEstudianteFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ReportesFrm.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Properties.Resources.resources
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.GenerateResource.cache
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.CoreCompileInputs.cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarEstudiante.resources

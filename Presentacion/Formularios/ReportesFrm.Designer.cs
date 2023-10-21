@@ -30,7 +30,7 @@
         {
             this.btnListaResponsables = new System.Windows.Forms.Button();
             this.btnListaDocentes = new System.Windows.Forms.Button();
-            this.btnListaAlumnos = new System.Windows.Forms.Button();
+            this.btnListaEstudiantes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnListaResponsables
@@ -49,6 +49,7 @@
             this.btnListaResponsables.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListaResponsables.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListaResponsables.UseVisualStyleBackColor = false;
+            this.btnListaResponsables.Click += new System.EventHandler(this.BotonesClick);
             // 
             // btnListaDocentes
             // 
@@ -66,23 +67,25 @@
             this.btnListaDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnListaDocentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListaDocentes.UseVisualStyleBackColor = false;
+            this.btnListaDocentes.Click += new System.EventHandler(this.BotonesClick);
             // 
-            // btnListaAlumnos
+            // btnListaEstudiantes
             // 
-            this.btnListaAlumnos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnListaAlumnos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
-            this.btnListaAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListaAlumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaAlumnos.ForeColor = System.Drawing.Color.White;
-            this.btnListaAlumnos.Image = global::Presentacion.Properties.Resources.icons8_book_32;
-            this.btnListaAlumnos.Location = new System.Drawing.Point(70, 109);
-            this.btnListaAlumnos.Name = "btnListaAlumnos";
-            this.btnListaAlumnos.Size = new System.Drawing.Size(330, 80);
-            this.btnListaAlumnos.TabIndex = 9;
-            this.btnListaAlumnos.Text = " Lista de Alumnos";
-            this.btnListaAlumnos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnListaAlumnos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnListaAlumnos.UseVisualStyleBackColor = false;
+            this.btnListaEstudiantes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnListaEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
+            this.btnListaEstudiantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListaEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaEstudiantes.ForeColor = System.Drawing.Color.White;
+            this.btnListaEstudiantes.Image = global::Presentacion.Properties.Resources.icons8_book_32;
+            this.btnListaEstudiantes.Location = new System.Drawing.Point(70, 109);
+            this.btnListaEstudiantes.Name = "btnListaEstudiantes";
+            this.btnListaEstudiantes.Size = new System.Drawing.Size(330, 80);
+            this.btnListaEstudiantes.TabIndex = 9;
+            this.btnListaEstudiantes.Text = " Lista de Estudiantes";
+            this.btnListaEstudiantes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnListaEstudiantes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnListaEstudiantes.UseVisualStyleBackColor = false;
+            this.btnListaEstudiantes.Click += new System.EventHandler(this.BotonesClick);
             // 
             // ReportesFrm
             // 
@@ -92,7 +95,7 @@
             this.ClientSize = new System.Drawing.Size(824, 570);
             this.Controls.Add(this.btnListaResponsables);
             this.Controls.Add(this.btnListaDocentes);
-            this.Controls.Add(this.btnListaAlumnos);
+            this.Controls.Add(this.btnListaEstudiantes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReportesFrm";
             this.Text = "ReportesFrm";
@@ -104,6 +107,6 @@
 
         private System.Windows.Forms.Button btnListaResponsables;
         private System.Windows.Forms.Button btnListaDocentes;
-        private System.Windows.Forms.Button btnListaAlumnos;
+        private System.Windows.Forms.Button btnListaEstudiantes;
     }
 }

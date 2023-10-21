@@ -1,0 +1,7 @@
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Release\Logica.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Release\Logica.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Release\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Release\Datos.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Release\Logica.csprojResolveAssemblyReference.cache
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Release\Logica.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Release\Logica.pdb

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Datos.Conexion;
 using System.Windows.Forms;
 using System.Reflection;
@@ -21,33 +18,35 @@ namespace Logica.Negocio
 
             if (Alta == true)
             {
-              
+                MessageBox.Show("Alta Creada");
             }
             else
             {
-
+                MessageBox.Show("Error");
             }
         }
 
-       public bool VerificarSiObjetoEsVacio(Form formulario, ErrorProvider error)
+       public bool VerificarSiObjetoEsVacio(GroupBox groupBox, ErrorProvider error)
         {
-            bool algunObjetoVacio = false;
+            bool algunObjetoVacio = true;
 
-            foreach (Control control in formulario.Controls)
+            foreach (Control control in groupBox.Controls)
             {
+                string textoDecorativo = control.Tag.ToString();
+
                 if (control is TextBox)
-                {
-                    if (string.IsNullOrWhiteSpace(control.Text))
+                {                    
+                    if (string.IsNullOrWhiteSpace(control.Text) || (control.Text == textoDecorativo))
                     {
-                        algunObjetoVacio = true;
+                        algunObjetoVacio = false;
                         error.SetError(control, "Campo Obligatorio");                                           
                     }
                 }
                 else if (control is ComboBox)
                 {
-                    if (string.IsNullOrWhiteSpace(control.Text))
+                    if (string.IsNullOrWhiteSpace(control.Text) || (control.Text == textoDecorativo))
                     {
-                        algunObjetoVacio = true;
+                        algunObjetoVacio = false;
                         error.SetError(control, "Campo Obligatorio");              
                     }
 

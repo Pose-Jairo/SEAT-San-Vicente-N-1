@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Presentacion.Formularios
@@ -14,6 +8,12 @@ namespace Presentacion.Formularios
         public ReportesFrm()
         {
             InitializeComponent();
+        }
+
+        private void BotonesClick(object sender, EventArgs e)
+        {
+            var button = ((Button)sender);
+            PrincipalFrm.Instancia.AbrirFormulario(button.Name);
         }
     }
 }

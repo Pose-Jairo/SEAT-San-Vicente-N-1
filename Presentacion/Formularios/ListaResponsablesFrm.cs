@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using Logica.Negocio;
 
 namespace Presentacion.Formularios
 {
@@ -14,6 +10,18 @@ namespace Presentacion.Formularios
         public ListaResponsablesFrm()
         {
             InitializeComponent();
+        }
+
+        private string consultaResponsables = "SELECT Nombre,Apellido,Direccion,Ocupacion From Responsable";
+
+        Metodos metodo = new Metodos();
+
+        DataTable Tabla = new DataTable();
+
+        private void ListaResponsablesFrm_Load(object sender, EventArgs e)
+        {
+            dgvResponsables.DataSource = metodo.Actualizar(Tabla, consultaResponsables);
+            dgvResponsables.ClearSelection();
         }
     }
 }

@@ -13,8 +13,6 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }        
-       // private string consultaEstudiantes = "SELECT Cuil,Nombre,Apellido,Direccion,entreCalles,fechaIngreso,fechaNac From Estudiante";
-       // private string consultaResponsables = "SELECT Nombre,Apellido,Direccion,Ocupacion From Responsable";
 
         private void MatriculaFrm_Load(object sender, EventArgs e)
         {
