@@ -48,3 +48,22 @@ D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\De
 D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.GenerateResource.cache
 D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.CoreCompileInputs.cache
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarEstudiante.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Logica.dll
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\bin\Debug\Logica.pdb
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.DocentesFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaDocentesFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaEstudiantesFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ListaResponsablesFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.LoginFmr.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.MatriculaFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarDocenteFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ModificarEstudiante.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoDocenteFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.NuevoEstudianteFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.PrincipalFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Formularios.ReportesFrm.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.Properties.Resources.resources
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Presentacion\obj\x86\Debug\Presentacion.csproj.GenerateResource.Cache

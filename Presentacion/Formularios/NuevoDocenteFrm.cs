@@ -18,7 +18,11 @@ namespace Presentacion.Formularios
         }
 
         Metodos Metodo = new Metodos();
+
         DataTable Tabla = new DataTable();
+
+        Validaciones validacion = new Validaciones();
+
         //diseño de consulta que trae docentes y sus telefonos
         string consulta = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido, Docente.Email, Docente.Contraseña, Tel_doc.Telefono FROM Docente INNER JOIN Tel_doc ON Tel_doc.Id_docente = Docente.Id_docente";
 
@@ -31,18 +35,45 @@ namespace Presentacion.Formularios
             }
             catch
             {
-                MessageBox.Show("error");
+                MessageBox.Show("error al llamar tabla en frm uptade docente");
             }
             
         }
 
         private void btn_docRegistra_Click(object sender, EventArgs e)
         {
-            //llama al metodo que ejecuta un insert
-            consulta = "INSERT INTO Docente (DNI, Nombre,Apellido,Direccion,Telefono,Telefono2) VALUES ('"
-                + txt_DocDNI.Text + "','" + txt_docNom.Text + "','" + txt_apell.Text + "','" + txt_direccion.Text + "','"
-                    + txt_tel.Text + "','" + txt_tel2.Text + "')";
+            if ((validacion.VerificarSiObjetoEsVacio(gbDocentes, errorDoc)))
+            {
+
+                //arma la consulta de docente
+                string AltaDocente = "INSERT INTO Docente (DNI, Nombre, Apellido, Email, Contraseña) VALUES ("
+                + txt_DocDNI.Text + ",'" + txt_docNom.Text + "','" + txt_docApell.Text + "','" + txt_docEmail.Text + "','"
+                + txt_DocContra.Text + "')";
+                //procede a verificar la consulta y la ejecuta
+                validacion.PruebaAlta(AltaDocente);
+                //arma la consulta de telefonos
+                string AltaTelefonos = "INSERT INTO Tel_doc(Telefono, Id_docente) VALUES(" + txt_docTel1.Text + ", " + ValorCodigo(txt_DocDNI) + ")";
+                //procede a verificar la consulta y la ejecuta
+                validacion.PruebaAlta(AltaTelefonos);
+                //actualiza la tabla de docentes
+                dgv_docVista.DataSource = Metodo.Actualizar(Tabla, consulta);
+
+            }
+
         }
+
+        //Metodo que busca la Id de una tabla
+        public int ValorCodigo(Control objeto)
+        {
+            int codigoDeTabla = 0;
+
+            codigoDeTabla = Metodo.ConseguirCodigoDeTabla(objeto.Tag.ToString(), objeto.Text);
+
+            return codigoDeTabla;
+        }
+
+
+
         
     }
 }
