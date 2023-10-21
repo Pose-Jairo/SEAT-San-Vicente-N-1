@@ -31,35 +31,39 @@
             this.label7 = new System.Windows.Forms.Label();
             this.dgvCargaDocentes = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.panelkk2 = new System.Windows.Forms.Panel();
+            this.txt_docTel2 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_docTel1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.gbDocentes = new System.Windows.Forms.GroupBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btn_docCancel = new System.Windows.Forms.Button();
+            this.btn_docRegistra = new System.Windows.Forms.Button();
+            this.panelkk = new System.Windows.Forms.Panel();
+            this.txt_DocDNI = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.paneldelpndejodejairo = new System.Windows.Forms.Panel();
+            this.txt_DocContra = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_docEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_docApell = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_docNom = new System.Windows.Forms.TextBox();
+            this.dgv_docVista = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargaDocentes)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.panelkk2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.gbDocentes.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panelkk.SuspendLayout();
+            this.paneldelpndejodejairo.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_docVista)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -101,43 +105,43 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Telefono 1:";
             // 
-            // panel7
+            // panelkk2
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel7.Controls.Add(this.textBox7);
-            this.panel7.Location = new System.Drawing.Point(436, 44);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(120, 20);
-            this.panel7.TabIndex = 12;
+            this.panelkk2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.panelkk2.Controls.Add(this.txt_docTel2);
+            this.panelkk2.Location = new System.Drawing.Point(436, 44);
+            this.panelkk2.Name = "panelkk2";
+            this.panelkk2.Size = new System.Drawing.Size(120, 20);
+            this.panelkk2.TabIndex = 12;
             // 
-            // textBox7
+            // txt_docTel2
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Location = new System.Drawing.Point(0, 0);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(120, 13);
-            this.textBox7.TabIndex = 0;
+            this.txt_docTel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_docTel2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_docTel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_docTel2.Location = new System.Drawing.Point(0, 0);
+            this.txt_docTel2.Name = "txt_docTel2";
+            this.txt_docTel2.Size = new System.Drawing.Size(120, 13);
+            this.txt_docTel2.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel6.Controls.Add(this.textBox6);
+            this.panel6.Controls.Add(this.txt_docTel1);
             this.panel6.Location = new System.Drawing.Point(295, 44);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(120, 20);
             this.panel6.TabIndex = 18;
             // 
-            // textBox6
+            // txt_docTel1
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(0, 0);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 13);
-            this.textBox6.TabIndex = 0;
+            this.txt_docTel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_docTel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_docTel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_docTel1.Location = new System.Drawing.Point(0, 0);
+            this.txt_docTel1.Name = "txt_docTel1";
+            this.txt_docTel1.Size = new System.Drawing.Size(120, 13);
+            this.txt_docTel1.TabIndex = 0;
             // 
             // label5
             // 
@@ -154,14 +158,16 @@
             // gbDocentes
             // 
             this.gbDocentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
+            this.gbDocentes.Controls.Add(this.btn_docCancel);
+            this.gbDocentes.Controls.Add(this.btn_docRegistra);
             this.gbDocentes.Controls.Add(this.label7);
             this.gbDocentes.Controls.Add(this.label6);
-            this.gbDocentes.Controls.Add(this.panel7);
+            this.gbDocentes.Controls.Add(this.panelkk2);
             this.gbDocentes.Controls.Add(this.panel6);
             this.gbDocentes.Controls.Add(this.label5);
-            this.gbDocentes.Controls.Add(this.panel5);
+            this.gbDocentes.Controls.Add(this.panelkk);
             this.gbDocentes.Controls.Add(this.label4);
-            this.gbDocentes.Controls.Add(this.panel4);
+            this.gbDocentes.Controls.Add(this.paneldelpndejodejairo);
             this.gbDocentes.Controls.Add(this.label3);
             this.gbDocentes.Controls.Add(this.panel3);
             this.gbDocentes.Controls.Add(this.label1);
@@ -177,24 +183,43 @@
             this.gbDocentes.TabStop = false;
             this.gbDocentes.Text = "Datos del Docente";
             // 
-            // panel5
+            // btn_docCancel
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel5.Controls.Add(this.textBox5);
-            this.panel5.Location = new System.Drawing.Point(19, 96);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(120, 20);
-            this.panel5.TabIndex = 16;
+            this.btn_docCancel.Location = new System.Drawing.Point(513, 210);
+            this.btn_docCancel.Name = "btn_docCancel";
+            this.btn_docCancel.Size = new System.Drawing.Size(114, 44);
+            this.btn_docCancel.TabIndex = 21;
+            this.btn_docCancel.Text = "Cancelar";
+            this.btn_docCancel.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // btn_docRegistra
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(0, 0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(120, 13);
-            this.textBox5.TabIndex = 0;
+            this.btn_docRegistra.Location = new System.Drawing.Point(657, 200);
+            this.btn_docRegistra.Name = "btn_docRegistra";
+            this.btn_docRegistra.Size = new System.Drawing.Size(155, 64);
+            this.btn_docRegistra.TabIndex = 20;
+            this.btn_docRegistra.Text = "Registrar\r\nDocente";
+            this.btn_docRegistra.UseVisualStyleBackColor = true;
+            this.btn_docRegistra.Click += new System.EventHandler(this.btn_docRegistra_Click);
+            // 
+            // panelkk
+            // 
+            this.panelkk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.panelkk.Controls.Add(this.txt_DocDNI);
+            this.panelkk.Location = new System.Drawing.Point(19, 96);
+            this.panelkk.Name = "panelkk";
+            this.panelkk.Size = new System.Drawing.Size(120, 20);
+            this.panelkk.TabIndex = 16;
+            // 
+            // txt_DocDNI
+            // 
+            this.txt_DocDNI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_DocDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_DocDNI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_DocDNI.Location = new System.Drawing.Point(0, 0);
+            this.txt_DocDNI.Name = "txt_DocDNI";
+            this.txt_DocDNI.Size = new System.Drawing.Size(120, 13);
+            this.txt_DocDNI.TabIndex = 0;
             // 
             // label4
             // 
@@ -208,24 +233,24 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Contraseña:";
             // 
-            // panel4
+            // paneldelpndejodejairo
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Location = new System.Drawing.Point(19, 200);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(261, 20);
-            this.panel4.TabIndex = 14;
+            this.paneldelpndejodejairo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.paneldelpndejodejairo.Controls.Add(this.txt_DocContra);
+            this.paneldelpndejodejairo.Location = new System.Drawing.Point(19, 200);
+            this.paneldelpndejodejairo.Name = "paneldelpndejodejairo";
+            this.paneldelpndejodejairo.Size = new System.Drawing.Size(261, 20);
+            this.paneldelpndejodejairo.TabIndex = 14;
             // 
-            // textBox4
+            // txt_DocContra
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(0, 0);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(261, 13);
-            this.textBox4.TabIndex = 0;
+            this.txt_DocContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_DocContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_DocContra.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_DocContra.Location = new System.Drawing.Point(0, 0);
+            this.txt_DocContra.Name = "txt_DocContra";
+            this.txt_DocContra.Size = new System.Drawing.Size(261, 13);
+            this.txt_DocContra.TabIndex = 0;
             // 
             // label3
             // 
@@ -242,21 +267,21 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txt_docEmail);
             this.panel3.Location = new System.Drawing.Point(19, 148);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(261, 20);
             this.panel3.TabIndex = 12;
             // 
-            // textBox3
+            // txt_docEmail
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(0, 0);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(261, 13);
-            this.textBox3.TabIndex = 0;
+            this.txt_docEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_docEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_docEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_docEmail.Location = new System.Drawing.Point(0, 0);
+            this.txt_docEmail.Name = "txt_docEmail";
+            this.txt_docEmail.Size = new System.Drawing.Size(261, 13);
+            this.txt_docEmail.TabIndex = 0;
             // 
             // label1
             // 
@@ -273,21 +298,21 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txt_docApell);
             this.panel2.Location = new System.Drawing.Point(160, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(120, 20);
             this.panel2.TabIndex = 10;
             // 
-            // textBox2
+            // txt_docApell
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 13);
-            this.textBox2.TabIndex = 0;
+            this.txt_docApell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_docApell.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_docApell.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_docApell.Location = new System.Drawing.Point(0, 0);
+            this.txt_docApell.Name = "txt_docApell";
+            this.txt_docApell.Size = new System.Drawing.Size(120, 13);
+            this.txt_docApell.TabIndex = 0;
             // 
             // label2
             // 
@@ -304,21 +329,33 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_docNom);
             this.panel1.Location = new System.Drawing.Point(19, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(120, 20);
             this.panel1.TabIndex = 1;
             // 
-            // textBox1
+            // txt_docNom
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 13);
-            this.textBox1.TabIndex = 0;
+            this.txt_docNom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txt_docNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_docNom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_docNom.Location = new System.Drawing.Point(0, 0);
+            this.txt_docNom.Name = "txt_docNom";
+            this.txt_docNom.Size = new System.Drawing.Size(120, 13);
+            this.txt_docNom.TabIndex = 0;
+            // 
+            // dgv_docVista
+            // 
+            this.dgv_docVista.AllowUserToAddRows = false;
+            this.dgv_docVista.AllowUserToDeleteRows = false;
+            this.dgv_docVista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_docVista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_docVista.Location = new System.Drawing.Point(0, 0);
+            this.dgv_docVista.Name = "dgv_docVista";
+            this.dgv_docVista.ReadOnly = true;
+            this.dgv_docVista.Size = new System.Drawing.Size(824, 294);
+            this.dgv_docVista.TabIndex = 5;
             // 
             // NuevoDocenteFrm
             // 
@@ -326,28 +363,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(824, 570);
+            this.Controls.Add(this.dgv_docVista);
             this.Controls.Add(this.dgvCargaDocentes);
             this.Controls.Add(this.gbDocentes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoDocenteFrm";
             this.Text = "NuevoDocenteFrm";
+            this.Load += new System.EventHandler(this.NuevoDocenteFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargaDocentes)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panelkk2.ResumeLayout(false);
+            this.panelkk2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.gbDocentes.ResumeLayout(false);
             this.gbDocentes.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panelkk.ResumeLayout(false);
+            this.panelkk.PerformLayout();
+            this.paneldelpndejodejairo.ResumeLayout(false);
+            this.paneldelpndejodejairo.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_docVista)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,25 +397,28 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvCargaDocentes;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Panel panelkk2;
+        private System.Windows.Forms.TextBox txt_docTel2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_docTel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox gbDocentes;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Panel panelkk;
+        private System.Windows.Forms.TextBox txt_DocDNI;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Panel paneldelpndejodejairo;
+        private System.Windows.Forms.TextBox txt_DocContra;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_docEmail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_docApell;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_docNom;
+        private System.Windows.Forms.Button btn_docCancel;
+        private System.Windows.Forms.Button btn_docRegistra;
+        private System.Windows.Forms.DataGridView dgv_docVista;
     }
 }
