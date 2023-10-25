@@ -27,33 +27,29 @@ namespace Presentacion.Formularios
             {
                 string consultaAltaResponsable = "INSERT INTO Responsable(DNI,Nombre,Apellido,Direccion,Ocupacion,Parentesco,Cod_post,Cod_nacion)VALUES(" +
                 txtDNI.Text.Trim() + ",'" + txtNombresResponsable.Text.Trim() + "','" + txtApellidosResponsable.Text.Trim() + "','" + txtDireccionResponsable.Text.Trim() +
-                "','" + txtOcupacion.Text.Trim() + "','" + cmbParentesco.Text + "'," + ValorCodigo(cmbLocalidadResponsable) + "," + ValorCodigo(cmbNacionalidadResponsable) + ")";
+                "','" + txtOcupacion.Text.Trim() + "','" + cmbParentesco.Text + "'," + metodo.ValorCodigo(cmbLocalidadResponsable) + "," + metodo.ValorCodigo(cmbNacionalidadResponsable) + ")";
 
                 validacion.PruebaAlta(consultaAltaResponsable);
 
-                string consultaAltaTelefonos = "INSERT INTO Tel_resp(Telefono,Id_resp)VALUES(" + txtTelefono1.Text + "," + ValorCodigo(txtDNI) + ")";
+                string consultaAltaTelefonos = "INSERT INTO Tel_resp(Telefono,Id_resp)VALUES(" + txtTelefono1.Text + "," + metodo.ValorCodigo(txtDNI) + ")";
 
                 validacion.PruebaAlta(consultaAltaTelefonos);
 
                 string consultaAltaEstudiante = "INSERT INTO Estudiante(CUIL,Nombre,Apellido,Direccion,entreCalles,fechaIngreso,fechaNac,genero"
                 + ",turno,Id_caract,Id_categ,Cod_post,Cod_nacion,Id_resp)VALUES('" + txtCuil.Text.Trim() + "','" + txtNombresEstudiante.Text.Trim() + "','" +
                 txtApellidosEstudiante.Text.Trim() + "','" + txtDireccionEstudiante.Text.Trim() + "','" + txtEntreCallesEstudiante.Text.Trim() + "','" + dtpFechaIngreso.Text +
-                "','" + dtpFechaNacimiento.Text + "','" + cmbGenero.Text + "','" + cmbTurno.Text + "'," + ValorCodigo(cmbCaracterizacion) + "," + ValorCodigo(cmbCategoria) + ","+
-                ValorCodigo(cmbLocalidadEstudiante) + ","+ ValorCodigo(cmbNacionalidadEstudiante) + "," + ValorCodigo(txtDNI) + ")";
+                "','" + dtpFechaNacimiento.Text + "','" + cmbGenero.Text + "','" + cmbTurno.Text + "'," + metodo.ValorCodigo(cmbCaracterizacion) + "," + metodo.ValorCodigo(cmbCategoria) + "," +
+                metodo.ValorCodigo(cmbLocalidadEstudiante) + "," + metodo.ValorCodigo(cmbNacionalidadEstudiante) + "," + metodo.ValorCodigo(txtDNI) + ")";
 
                 validacion.PruebaAlta(consultaAltaEstudiante);
+
+                string consultaModificarEstudiante = "UPDATE Estudiante SET CUIL='" + txtCuil.Text + "',Nombre='" + txtNombresEstudiante.Text + "',Apellido='" + txtApellidosEstudiante.Text + 
+                "',Direccion='" + txtDireccionEstudiante.Text + "',entreCalles='" + txtEntreCallesEstudiante.Text + "',fechaIngreso='" + dtpFechaIngreso.Text + "',fechaNac='" + dtpFechaNacimiento.Text +
+                "',genero='" + cmbGenero.Text + "',turno='" + cmbTurno  .Text + "',Id_caract=" + metodo.ValorCodigo(cmbCaracterizacion) + ",Id_categ=" + metodo.ValorCodigo(cmbCategoria) + 
+                ",Cod_post=" + metodo.ValorCodigo(cmbLocalidadEstudiante) + ",Cod_nacion=" + metodo.ValorCodigo(cmbNacionalidadEstudiante) + ",Id_resp=" + metodo.ValorCodigo(txtDNI) +
+                " WHERE Id_estudiante=" + metodo.ValorCodigo(txtCuil);
             }
             
-        }
-
-
-        public int ValorCodigo(Control objeto)
-        {
-            int codigoDeTabla = 0;
-
-            codigoDeTabla = metodo.ConseguirCodigoDeTabla(objeto.Tag.ToString(), objeto.Text);
-
-            return codigoDeTabla;
         }
 
         private void VaciarTexto(object sender, EventArgs e)

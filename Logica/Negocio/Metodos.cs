@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Windows.Forms;
 using Datos.Conexion;
 
 namespace Logica.Negocio
@@ -56,5 +57,15 @@ namespace Logica.Negocio
             }
             return codigoDeTabla;
         }
+
+        public int ValorCodigo(Control objeto)
+        {
+            int codigoDeTabla = 0;
+
+            codigoDeTabla = ConseguirCodigoDeTabla(objeto.Tag.ToString(), objeto.Text);
+
+            return codigoDeTabla;
+        }
+
     }
 }
