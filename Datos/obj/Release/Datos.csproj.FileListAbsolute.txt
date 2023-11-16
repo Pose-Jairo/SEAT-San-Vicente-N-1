@@ -1,0 +1,4 @@
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\bin\Release\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\bin\Release\Datos.pdb
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Release\Datos.dll
+E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Release\Datos.pdb

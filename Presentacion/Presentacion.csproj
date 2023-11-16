@@ -84,17 +84,17 @@
     <Compile Include="Formularios\MatriculaFrm.Designer.cs">
       <DependentUpon>MatriculaFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\MenuFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\MenuFrm.Designer.cs">
-      <DependentUpon>MenuFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ModificarDocenteFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ModificarDocenteFrm.Designer.cs">
       <DependentUpon>ModificarDocenteFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ModificarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ModificarEstudiante.Designer.cs">
+      <DependentUpon>ModificarEstudiante.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\NuevoDocenteFrm.cs">
       <SubType>Form</SubType>
@@ -140,11 +140,11 @@
     <EmbeddedResource Include="Formularios\MatriculaFrm.resx">
       <DependentUpon>MatriculaFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\MenuFrm.resx">
-      <DependentUpon>MenuFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ModificarDocenteFrm.resx">
       <DependentUpon>ModificarDocenteFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ModificarEstudiante.resx">
+      <DependentUpon>ModificarEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\NuevoDocenteFrm.resx">
       <DependentUpon>NuevoDocenteFrm.cs</DependentUpon>

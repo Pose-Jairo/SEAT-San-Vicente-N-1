@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using System.Data;
+using Logica.Negocio;
 
 namespace Presentacion.Formularios
 {
@@ -14,6 +10,17 @@ namespace Presentacion.Formularios
         public ListaEstudiantesFrm()
         {
             InitializeComponent();
+        }
+        Metodos metodo = new Metodos();
+
+        DataTable Tabla = new DataTable();
+
+        private string consultaEstudiantes = "SELECT Cuil,Nombre,Apellido,Direccion,entreCalles FROM Estudiante";
+
+        private void ListaEstudiantesFrm_Load(object sender, EventArgs e)
+        {
+            dgvListaEstudiantes.DataSource = metodo.Actualizar(Tabla, consultaEstudiantes);
+            dgvListaEstudiantes.ClearSelection();
         }
     }
 }

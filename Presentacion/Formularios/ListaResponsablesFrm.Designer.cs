@@ -84,7 +84,7 @@
             this.dgvResponsables.Size = new System.Drawing.Size(824, 570);
             this.dgvResponsables.TabIndex = 8;
             // 
-            // ListaResponsables
+            // ListaResponsablesFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,8 +93,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvResponsables);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ListaResponsables";
+            this.Name = "ListaResponsablesFrm";
             this.Text = "ListaResponsables";
+            this.Load += new System.EventHandler(this.ListaResponsablesFrm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResponsables)).EndInit();

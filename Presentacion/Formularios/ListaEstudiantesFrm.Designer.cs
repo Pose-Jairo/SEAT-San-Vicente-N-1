@@ -30,7 +30,7 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.lblBuscar = new System.Windows.Forms.Label();
-            this.dgvMatricula = new System.Windows.Forms.DataGridView();
+            this.dgvListaEstudiantes = new System.Windows.Forms.DataGridView();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -43,7 +43,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaEstudiantes)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,24 +70,24 @@
             this.lblBuscar.TabIndex = 4;
             this.lblBuscar.Text = "Buscador";
             // 
-            // dgvMatricula
+            // dgvListaEstudiantes
             // 
-            this.dgvMatricula.AllowUserToAddRows = false;
-            this.dgvMatricula.AllowUserToDeleteRows = false;
-            this.dgvMatricula.AllowUserToResizeColumns = false;
-            this.dgvMatricula.AllowUserToResizeRows = false;
-            this.dgvMatricula.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMatricula.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.dgvMatricula.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvMatricula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMatricula.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMatricula.Location = new System.Drawing.Point(0, 80);
-            this.dgvMatricula.Name = "dgvMatricula";
-            this.dgvMatricula.ReadOnly = true;
-            this.dgvMatricula.RowHeadersVisible = false;
-            this.dgvMatricula.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvMatricula.Size = new System.Drawing.Size(824, 370);
-            this.dgvMatricula.TabIndex = 6;
+            this.dgvListaEstudiantes.AllowUserToAddRows = false;
+            this.dgvListaEstudiantes.AllowUserToDeleteRows = false;
+            this.dgvListaEstudiantes.AllowUserToResizeColumns = false;
+            this.dgvListaEstudiantes.AllowUserToResizeRows = false;
+            this.dgvListaEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListaEstudiantes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.dgvListaEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvListaEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaEstudiantes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvListaEstudiantes.Location = new System.Drawing.Point(0, 80);
+            this.dgvListaEstudiantes.Name = "dgvListaEstudiantes";
+            this.dgvListaEstudiantes.ReadOnly = true;
+            this.dgvListaEstudiantes.RowHeadersVisible = false;
+            this.dgvListaEstudiantes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvListaEstudiantes.Size = new System.Drawing.Size(824, 370);
+            this.dgvListaEstudiantes.TabIndex = 6;
             // 
             // comboBox8
             // 
@@ -243,13 +243,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
             this.ClientSize = new System.Drawing.Size(824, 570);
-            this.Controls.Add(this.dgvMatricula);
+            this.Controls.Add(this.dgvListaEstudiantes);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListaEstudiantesFrm";
             this.Text = "ListaEstudiantesFrm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).EndInit();
+            this.Load += new System.EventHandler(this.ListaEstudiantesFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaEstudiantes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -262,7 +263,7 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblBuscar;
-        private System.Windows.Forms.DataGridView dgvMatricula;
+        private System.Windows.Forms.DataGridView dgvListaEstudiantes;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtBuscar;

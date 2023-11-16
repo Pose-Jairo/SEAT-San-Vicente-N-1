@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Logica.Negocio;
 
 namespace Presentacion.Formularios
 {
@@ -15,5 +16,78 @@ namespace Presentacion.Formularios
         {
             InitializeComponent();
         }
+
+        Metodos Metodo = new Metodos();
+
+        DataTable TablaUPD = new DataTable();
+
+        Validaciones validacion = new Validaciones();
+
+        string consultaUPD = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido, Docente.Email, Docente.Contraseña, Tel_doc.Telefono FROM Docente INNER JOIN Tel_doc ON Tel_doc.Id_docente = Docente.Id_docente";
+
+        int Indice_ID = 0;
+
+        private void ModificarDocenteFrm_Load(object sender, EventArgs e)
+        {
+            //llama la tabla docente y tel, lo muestra en el DGV...
+            try
+            {
+                dgvDocenteVistaUPD.DataSource = Metodo.Actualizar(TablaUPD,consultaUPD);
+            }
+            catch
+            {
+                MessageBox.Show("error");
+            }
+        }
+
+        private void dgvDocenteVistaUPD_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+
+
+            if (indice > 0)
+            {
+                try
+                {
+                    carga_tabla(indice);
+                    Indice_ID = ValorCodigo(txt_DocDNIUPD);
+                }
+                catch
+                {
+                    MessageBox.Show("error al cargar los datos de la tabla");
+                }
+            }
+        }
+
+        private void carga_tabla(int val)
+        {
+            txt_DocDNIUPD.Text = Convert.ToString(dgvDocenteVistaUPD[0, val].Value);
+            txt_docNomUPD.Text = Convert.ToString(dgvDocenteVistaUPD[1, val].Value);
+            txt_docApellUPD.Text = Convert.ToString(dgvDocenteVistaUPD[2, val].Value);
+            txt_docEmailUPD.Text = Convert.ToString(dgvDocenteVistaUPD[3, val].Value);
+            txt_DocContraUPD.Text = Convert.ToString(dgvDocenteVistaUPD[4, val].Value);
+            txt_docTel1UPD.Text = Convert.ToString(dgvDocenteVistaUPD[5, val].Value);
+        }
+
+        private void btn_docUPDATE_Click(object sender, EventArgs e)
+        {
+            //arma la consulta de UPDATE
+            string UpdateDocente = "UPDATE Docente SET DNI =" +txt_DocDNIUPD.Text 
+            + ", Nombre ='" + txt_docNomUPD.Text +"', Apellido = '" +txt_docApellUPD.Text
+            + "', Email ='" + txt_docEmailUPD.Text +"',Contraseña ='" +txt_DocContraUPD.Text
+            + "',WHERE Id_Docente =" +Indice_ID;
+        }
+
+        //Metodo que busca la Id de una tabla
+        public int ValorCodigo(Control objeto)
+        {
+            int codigoDeTabla = 0;
+
+            codigoDeTabla = Metodo.ConseguirCodigoDeTabla(objeto.Tag.ToString(), objeto.Text);
+
+            return codigoDeTabla;
+        }
+
+   
     }
 }

@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Data;
+using System.Windows.Forms;
 using Datos.Conexion;
-using Datos.Consultas;
 
 namespace Logica.Negocio
 {
     public class Metodos
     {
         ConexionConBD BDConexion = new ConexionConBD();
-        ABM abm = new ABM();
-
+        
         public DataTable Actualizar(DataTable Tabla, string consulta)
         {
             Tabla = new DataTable();
@@ -23,18 +22,49 @@ namespace Logica.Negocio
             return (Tabla);
         }
 
-        bool _alta = false;
-
-        public bool cadenaAlta()
-        {           
-            _alta = BDConexion.EjecutarConsulta(abm.Cadena);
-
-            return _alta;
-        }
-        public bool Alta
+        public int ConseguirCodigoDeTabla(string nombreTabla, string valorCampoDeTabla)
         {
-            get { return _alta; }
-            set { _alta = value; }
+            int codigoDeTabla = 0;
+
+            string cadenaParaTabla;
+
+            switch (nombreTabla)
+            {
+                case "Localidad":
+                    cadenaParaTabla = "SELECT Cod_post FROM Localidad WHERE NomLocal=" + "'" + valorCampoDeTabla + "'";
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+                case "Nacionalidad":
+                    cadenaParaTabla = "SELECT Cod_nacion FROM Nacionalidad WHERE NomNacion=" + "'" + valorCampoDeTabla + "'";
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+                case "Categoria":
+                    cadenaParaTabla = "SELECT Id_categ FROM Categoria WHERE Descripcion=" + "'" + valorCampoDeTabla + "'";
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+                case "Caracterizacion":
+                    cadenaParaTabla = "SELECT Id_caract FROM Caracterizacion WHERE Especificacion=" + "'" + valorCampoDeTabla + "'";
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+                case " DNI":
+                    cadenaParaTabla = "SELECT Id_resp FROM Responsable WHERE DNI=" + valorCampoDeTabla;
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+                case "txt_DocDNI":
+                    cadenaParaTabla = "SELECT Id_Docente FROM Docente WHERE DNI=" + valorCampoDeTabla;
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+            }
+            return codigoDeTabla;
+        }
+
+        public int ValorCodigo(Control objeto)
+        {
+            int codigoDeTabla = 0;
+
+            codigoDeTabla = ConseguirCodigoDeTabla(objeto.Tag.ToString(), objeto.Text);
+
+            return codigoDeTabla;
         }
 
     }

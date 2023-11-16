@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using Logica.Negocio;
 
 namespace Presentacion.Formularios
 {
     public partial class LoginFmr : Form
     {
         public static LoginFmr Instancia { get; private set; }
+
+        Validaciones validacion = new Validaciones();
 
         public LoginFmr()
         {
@@ -21,7 +20,7 @@ namespace Presentacion.Formularios
       
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "1234" & txtPassword.Text == "1234")
+            if (validacion.ValidadDatosLogin(txtEmail.Text, txtPassword.Text))
             {
                 PrincipalFrm principal = new PrincipalFrm();
                 Instancia.Hide();

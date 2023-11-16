@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmb_caract = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.components = new System.ComponentModel.Container();
+            this.gbDatosEstudiante = new System.Windows.Forms.GroupBox();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.gbObservaciones = new System.Windows.Forms.GroupBox();
             this.txt_obsDet = new System.Windows.Forms.TextBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
@@ -37,87 +40,105 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.cmb_estNacion = new System.Windows.Forms.ComboBox();
-            this.cmb_estTurno = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_anioIng = new System.Windows.Forms.TextBox();
-            this.txt_diaIng = new System.Windows.Forms.TextBox();
-            this.txt_mesIng = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_anioNac = new System.Windows.Forms.TextBox();
-            this.txt_diaNac = new System.Windows.Forms.TextBox();
-            this.txt_mesNac = new System.Windows.Forms.TextBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.cmb_categ = new System.Windows.Forms.ComboBox();
-            this.cmb_estLocal = new System.Windows.Forms.ComboBox();
-            this.txt_estDir = new System.Windows.Forms.TextBox();
-            this.txt_estEntrecall = new System.Windows.Forms.TextBox();
-            this.txt_cuil = new System.Windows.Forms.TextBox();
-            this.txt_estApell = new System.Windows.Forms.TextBox();
-            this.txt_estNom = new System.Windows.Forms.TextBox();
-            this.cmb_genero = new System.Windows.Forms.ComboBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btn_altaRegistrar = new System.Windows.Forms.Button();
+            this.cmbNacionalidadEstudiante = new System.Windows.Forms.ComboBox();
+            this.cmbTurno = new System.Windows.Forms.ComboBox();
+            this.cmbCaracterizacion = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.cmbLocalidadEstudiante = new System.Windows.Forms.ComboBox();
+            this.txtDireccionEstudiante = new System.Windows.Forms.TextBox();
+            this.txtEntreCallesEstudiante = new System.Windows.Forms.TextBox();
+            this.txtCuil = new System.Windows.Forms.TextBox();
+            this.txtApellidosEstudiante = new System.Windows.Forms.TextBox();
+            this.txtNombresEstudiante = new System.Windows.Forms.TextBox();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.gbDatosResponsable = new System.Windows.Forms.GroupBox();
+            this.cmbParentesco = new System.Windows.Forms.ComboBox();
+            this.txtTelefono2 = new System.Windows.Forms.TextBox();
+            this.txtTelefono1 = new System.Windows.Forms.TextBox();
+            this.txtOcupacion = new System.Windows.Forms.TextBox();
+            this.cmbNacionalidadResponsable = new System.Windows.Forms.ComboBox();
+            this.cmbLocalidadResponsable = new System.Windows.Forms.ComboBox();
+            this.txtDireccionResponsable = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtApellidosResponsable = new System.Windows.Forms.TextBox();
+            this.txtNombresResponsable = new System.Windows.Forms.TextBox();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.btn_altaCancel = new System.Windows.Forms.Button();
-            this.txt_resTel2 = new System.Windows.Forms.TextBox();
-            this.txt_resTel1 = new System.Windows.Forms.TextBox();
-            this.txt_resOcup = new System.Windows.Forms.TextBox();
-            this.cmb_resNacion = new System.Windows.Forms.ComboBox();
-            this.cmb_resLocal = new System.Windows.Forms.ComboBox();
-            this.txt_resDir = new System.Windows.Forms.TextBox();
-            this.txt_dni = new System.Windows.Forms.TextBox();
-            this.txt_resApell = new System.Windows.Forms.TextBox();
-            this.txt_resNom = new System.Windows.Forms.TextBox();
-            this.cmb_caract.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.gbDatosEstudiante.SuspendLayout();
+            this.gbObservaciones.SuspendLayout();
+            this.gbDatosResponsable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
-            // cmb_caract
+            // gbDatosEstudiante
             // 
-            this.cmb_caract.Controls.Add(this.groupBox4);
-            this.cmb_caract.Controls.Add(this.cmb_estNacion);
-            this.cmb_caract.Controls.Add(this.cmb_estTurno);
-            this.cmb_caract.Controls.Add(this.groupBox3);
-            this.cmb_caract.Controls.Add(this.groupBox1);
-            this.cmb_caract.Controls.Add(this.comboBox8);
-            this.cmb_caract.Controls.Add(this.cmb_categ);
-            this.cmb_caract.Controls.Add(this.cmb_estLocal);
-            this.cmb_caract.Controls.Add(this.txt_estDir);
-            this.cmb_caract.Controls.Add(this.txt_estEntrecall);
-            this.cmb_caract.Controls.Add(this.txt_cuil);
-            this.cmb_caract.Controls.Add(this.txt_estApell);
-            this.cmb_caract.Controls.Add(this.txt_estNom);
-            this.cmb_caract.Controls.Add(this.cmb_genero);
-            this.cmb_caract.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cmb_caract.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_caract.ForeColor = System.Drawing.Color.White;
-            this.cmb_caract.Location = new System.Drawing.Point(0, 0);
-            this.cmb_caract.Name = "cmb_caract";
-            this.cmb_caract.Size = new System.Drawing.Size(824, 312);
-            this.cmb_caract.TabIndex = 102;
-            this.cmb_caract.TabStop = false;
-            this.cmb_caract.Text = "Datos del Estudiante";
+            this.gbDatosEstudiante.Controls.Add(this.dtpFechaIngreso);
+            this.gbDatosEstudiante.Controls.Add(this.dtpFechaNacimiento);
+            this.gbDatosEstudiante.Controls.Add(this.gbObservaciones);
+            this.gbDatosEstudiante.Controls.Add(this.cmbNacionalidadEstudiante);
+            this.gbDatosEstudiante.Controls.Add(this.cmbTurno);
+            this.gbDatosEstudiante.Controls.Add(this.cmbCaracterizacion);
+            this.gbDatosEstudiante.Controls.Add(this.cmbCategoria);
+            this.gbDatosEstudiante.Controls.Add(this.cmbLocalidadEstudiante);
+            this.gbDatosEstudiante.Controls.Add(this.txtDireccionEstudiante);
+            this.gbDatosEstudiante.Controls.Add(this.txtEntreCallesEstudiante);
+            this.gbDatosEstudiante.Controls.Add(this.txtCuil);
+            this.gbDatosEstudiante.Controls.Add(this.txtApellidosEstudiante);
+            this.gbDatosEstudiante.Controls.Add(this.txtNombresEstudiante);
+            this.gbDatosEstudiante.Controls.Add(this.cmbGenero);
+            this.gbDatosEstudiante.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbDatosEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gbDatosEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDatosEstudiante.ForeColor = System.Drawing.Color.White;
+            this.gbDatosEstudiante.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gbDatosEstudiante.Location = new System.Drawing.Point(20, 20);
+            this.gbDatosEstudiante.Name = "gbDatosEstudiante";
+            this.gbDatosEstudiante.Padding = new System.Windows.Forms.Padding(10);
+            this.gbDatosEstudiante.Size = new System.Drawing.Size(767, 307);
+            this.gbDatosEstudiante.TabIndex = 0;
+            this.gbDatosEstudiante.TabStop = false;
+            this.gbDatosEstudiante.Text = "DATOS DEL ESTUDIANTE";
             // 
-            // groupBox4
+            // dtpFechaIngreso
             // 
-            this.groupBox4.Controls.Add(this.txt_obsDet);
-            this.groupBox4.Controls.Add(this.checkBox6);
-            this.groupBox4.Controls.Add(this.checkBox5);
-            this.groupBox4.Controls.Add(this.checkBox4);
-            this.groupBox4.Controls.Add(this.checkBox3);
-            this.groupBox4.Controls.Add(this.checkBox2);
-            this.groupBox4.Controls.Add(this.checkBox1);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(13, 199);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(560, 100);
-            this.groupBox4.TabIndex = 47;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Observaciones";
+            this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(547, 74);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 22);
+            this.dtpFechaIngreso.TabIndex = 7;
+            this.dtpFechaIngreso.Tag = "Fecha Ingreso";
+            // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(341, 73);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 22);
+            this.dtpFechaNacimiento.TabIndex = 6;
+            this.dtpFechaNacimiento.Tag = "Fecha Nacimiento";
+            // 
+            // gbObservaciones
+            // 
+            this.gbObservaciones.Controls.Add(this.txt_obsDet);
+            this.gbObservaciones.Controls.Add(this.checkBox6);
+            this.gbObservaciones.Controls.Add(this.checkBox5);
+            this.gbObservaciones.Controls.Add(this.checkBox4);
+            this.gbObservaciones.Controls.Add(this.checkBox3);
+            this.gbObservaciones.Controls.Add(this.checkBox2);
+            this.gbObservaciones.Controls.Add(this.checkBox1);
+            this.gbObservaciones.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbObservaciones.ForeColor = System.Drawing.Color.White;
+            this.gbObservaciones.Location = new System.Drawing.Point(10, 197);
+            this.gbObservaciones.Name = "gbObservaciones";
+            this.gbObservaciones.Size = new System.Drawing.Size(747, 100);
+            this.gbObservaciones.TabIndex = 47;
+            this.gbObservaciones.TabStop = false;
+            this.gbObservaciones.Tag = "Observaciones";
+            this.gbObservaciones.Text = "Observaciones";
             // 
             // txt_obsDet
             // 
@@ -130,7 +151,10 @@
             this.txt_obsDet.Name = "txt_obsDet";
             this.txt_obsDet.Size = new System.Drawing.Size(273, 72);
             this.txt_obsDet.TabIndex = 35;
-            this.txt_obsDet.Text = "Detalles *no obligatorio";
+            this.txt_obsDet.Tag = "Detalles";
+            this.txt_obsDet.Text = "Detalles\r\n";
+            this.txt_obsDet.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txt_obsDet.Leave += new System.EventHandler(this.RellenarTexto);
             // 
             // checkBox6
             // 
@@ -192,450 +216,456 @@
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // cmb_estNacion
+            // cmbNacionalidadEstudiante
             // 
-            this.cmb_estNacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_estNacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_estNacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_estNacion.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_estNacion.ItemHeight = 15;
-            this.cmb_estNacion.Location = new System.Drawing.Point(15, 165);
-            this.cmb_estNacion.Name = "cmb_estNacion";
-            this.cmb_estNacion.Size = new System.Drawing.Size(210, 23);
-            this.cmb_estNacion.TabIndex = 46;
-            this.cmb_estNacion.Text = "Nacionalidad";
+            this.cmbNacionalidadEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbNacionalidadEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbNacionalidadEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNacionalidadEstudiante.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbNacionalidadEstudiante.ItemHeight = 15;
+            this.cmbNacionalidadEstudiante.Items.AddRange(new object[] {
+            "argentina",
+            "uruguay",
+            "peru",
+            "chile"});
+            this.cmbNacionalidadEstudiante.Location = new System.Drawing.Point(15, 165);
+            this.cmbNacionalidadEstudiante.Name = "cmbNacionalidadEstudiante";
+            this.cmbNacionalidadEstudiante.Size = new System.Drawing.Size(210, 23);
+            this.cmbNacionalidadEstudiante.TabIndex = 11;
+            this.cmbNacionalidadEstudiante.Tag = "Nacionalidad";
+            this.cmbNacionalidadEstudiante.Text = "Nacionalidad";
             // 
-            // cmb_estTurno
+            // cmbTurno
             // 
-            this.cmb_estTurno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_estTurno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_estTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_estTurno.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_estTurno.ItemHeight = 15;
-            this.cmb_estTurno.Location = new System.Drawing.Point(231, 165);
-            this.cmb_estTurno.Name = "cmb_estTurno";
-            this.cmb_estTurno.Size = new System.Drawing.Size(104, 23);
-            this.cmb_estTurno.TabIndex = 45;
-            this.cmb_estTurno.Text = "Turno";
+            this.cmbTurno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbTurno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTurno.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbTurno.ItemHeight = 15;
+            this.cmbTurno.Items.AddRange(new object[] {
+            "mañana",
+            "tarde"});
+            this.cmbTurno.Location = new System.Drawing.Point(231, 165);
+            this.cmbTurno.Name = "cmbTurno";
+            this.cmbTurno.Size = new System.Drawing.Size(104, 23);
+            this.cmbTurno.TabIndex = 12;
+            this.cmbTurno.Tag = "Turno";
+            this.cmbTurno.Text = "Turno";
             // 
-            // groupBox3
+            // cmbCaracterizacion
             // 
-            this.groupBox3.Controls.Add(this.txt_anioIng);
-            this.groupBox3.Controls.Add(this.txt_diaIng);
-            this.groupBox3.Controls.Add(this.txt_mesIng);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(557, 66);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 60);
-            this.groupBox3.TabIndex = 44;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Fecha de Ingreso";
+            this.cmbCaracterizacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbCaracterizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCaracterizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCaracterizacion.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbCaracterizacion.ItemHeight = 15;
+            this.cmbCaracterizacion.Items.AddRange(new object[] {
+            "Neuromotora",
+            "D. Intelectual",
+            "D. Visual",
+            "Sordo",
+            "TEL",
+            "ADYCS",
+            "Sordoceguera",
+            "Multidiscapacidad"});
+            this.cmbCaracterizacion.Location = new System.Drawing.Point(125, 73);
+            this.cmbCaracterizacion.Name = "cmbCaracterizacion";
+            this.cmbCaracterizacion.Size = new System.Drawing.Size(210, 23);
+            this.cmbCaracterizacion.TabIndex = 5;
+            this.cmbCaracterizacion.Tag = "Caracterizacion";
+            this.cmbCaracterizacion.Text = "Caracterizacion";
             // 
-            // txt_anioIng
+            // cmbCategoria
             // 
-            this.txt_anioIng.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_anioIng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_anioIng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_anioIng.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_anioIng.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_anioIng.Location = new System.Drawing.Point(130, 25);
-            this.txt_anioIng.Name = "txt_anioIng";
-            this.txt_anioIng.Size = new System.Drawing.Size(56, 22);
-            this.txt_anioIng.TabIndex = 42;
-            this.txt_anioIng.Text = "Año";
+            this.cmbCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCategoria.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbCategoria.ItemHeight = 15;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Lactantes",
+            "deambulante",
+            "2 años"});
+            this.cmbCategoria.Location = new System.Drawing.Point(15, 73);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(104, 23);
+            this.cmbCategoria.TabIndex = 4;
+            this.cmbCategoria.Tag = "Categoria";
+            this.cmbCategoria.Text = "Categoria";
             // 
-            // txt_diaIng
+            // cmbLocalidadEstudiante
             // 
-            this.txt_diaIng.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_diaIng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_diaIng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_diaIng.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diaIng.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_diaIng.Location = new System.Drawing.Point(6, 25);
-            this.txt_diaIng.Name = "txt_diaIng";
-            this.txt_diaIng.Size = new System.Drawing.Size(56, 22);
-            this.txt_diaIng.TabIndex = 40;
-            this.txt_diaIng.Text = "Dia";
+            this.cmbLocalidadEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbLocalidadEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbLocalidadEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLocalidadEstudiante.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbLocalidadEstudiante.IntegralHeight = false;
+            this.cmbLocalidadEstudiante.ItemHeight = 15;
+            this.cmbLocalidadEstudiante.Items.AddRange(new object[] {
+            "glew",
+            "ale korn",
+            "guernica"});
+            this.cmbLocalidadEstudiante.Location = new System.Drawing.Point(447, 136);
+            this.cmbLocalidadEstudiante.Name = "cmbLocalidadEstudiante";
+            this.cmbLocalidadEstudiante.Size = new System.Drawing.Size(210, 23);
+            this.cmbLocalidadEstudiante.TabIndex = 10;
+            this.cmbLocalidadEstudiante.Tag = "Localidad";
+            this.cmbLocalidadEstudiante.Text = "Localidad";
             // 
-            // txt_mesIng
+            // txtDireccionEstudiante
             // 
-            this.txt_mesIng.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_mesIng.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_mesIng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mesIng.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mesIng.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_mesIng.Location = new System.Drawing.Point(68, 25);
-            this.txt_mesIng.Name = "txt_mesIng";
-            this.txt_mesIng.Size = new System.Drawing.Size(56, 22);
-            this.txt_mesIng.TabIndex = 41;
-            this.txt_mesIng.Text = "Mes";
+            this.txtDireccionEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtDireccionEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccionEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccionEstudiante.ForeColor = System.Drawing.Color.LightGray;
+            this.txtDireccionEstudiante.Location = new System.Drawing.Point(15, 137);
+            this.txtDireccionEstudiante.Name = "txtDireccionEstudiante";
+            this.txtDireccionEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtDireccionEstudiante.TabIndex = 8;
+            this.txtDireccionEstudiante.Tag = "Direccion";
+            this.txtDireccionEstudiante.Text = "Direccion";
+            this.txtDireccionEstudiante.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtDireccionEstudiante.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // groupBox1
+            // txtEntreCallesEstudiante
             // 
-            this.groupBox1.Controls.Add(this.txt_anioNac);
-            this.groupBox1.Controls.Add(this.txt_diaNac);
-            this.groupBox1.Controls.Add(this.txt_mesNac);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(346, 66);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 60);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Fecha de nacimiento";
+            this.txtEntreCallesEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtEntreCallesEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEntreCallesEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEntreCallesEstudiante.ForeColor = System.Drawing.Color.LightGray;
+            this.txtEntreCallesEstudiante.Location = new System.Drawing.Point(231, 137);
+            this.txtEntreCallesEstudiante.Name = "txtEntreCallesEstudiante";
+            this.txtEntreCallesEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtEntreCallesEstudiante.TabIndex = 9;
+            this.txtEntreCallesEstudiante.Tag = "Entre Calles";
+            this.txtEntreCallesEstudiante.Text = "Entre Calles";
+            this.txtEntreCallesEstudiante.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtEntreCallesEstudiante.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // txt_anioNac
+            // txtCuil
             // 
-            this.txt_anioNac.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_anioNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_anioNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_anioNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_anioNac.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_anioNac.Location = new System.Drawing.Point(130, 25);
-            this.txt_anioNac.Name = "txt_anioNac";
-            this.txt_anioNac.Size = new System.Drawing.Size(56, 22);
-            this.txt_anioNac.TabIndex = 42;
-            this.txt_anioNac.Text = "Año";
+            this.txtCuil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtCuil.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCuil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuil.ForeColor = System.Drawing.Color.LightGray;
+            this.txtCuil.Location = new System.Drawing.Point(28, 40);
+            this.txtCuil.Name = "txtCuil";
+            this.txtCuil.Size = new System.Drawing.Size(210, 22);
+            this.txtCuil.TabIndex = 0;
+            this.txtCuil.Tag = " CUIL";
+            this.txtCuil.Text = " CUIL";
+            this.txtCuil.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtCuil.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // txt_diaNac
+            // txtApellidosEstudiante
             // 
-            this.txt_diaNac.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_diaNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_diaNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_diaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diaNac.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_diaNac.Location = new System.Drawing.Point(6, 25);
-            this.txt_diaNac.Name = "txt_diaNac";
-            this.txt_diaNac.Size = new System.Drawing.Size(56, 22);
-            this.txt_diaNac.TabIndex = 40;
-            this.txt_diaNac.Text = "Dia";
+            this.txtApellidosEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtApellidosEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellidosEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidosEstudiante.ForeColor = System.Drawing.Color.LightGray;
+            this.txtApellidosEstudiante.Location = new System.Drawing.Point(528, 37);
+            this.txtApellidosEstudiante.Name = "txtApellidosEstudiante";
+            this.txtApellidosEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtApellidosEstudiante.TabIndex = 2;
+            this.txtApellidosEstudiante.Tag = " Apellidos";
+            this.txtApellidosEstudiante.Text = " Apellidos";
+            this.txtApellidosEstudiante.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtApellidosEstudiante.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // txt_mesNac
+            // txtNombresEstudiante
             // 
-            this.txt_mesNac.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_mesNac.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_mesNac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_mesNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mesNac.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_mesNac.Location = new System.Drawing.Point(68, 25);
-            this.txt_mesNac.Name = "txt_mesNac";
-            this.txt_mesNac.Size = new System.Drawing.Size(56, 22);
-            this.txt_mesNac.TabIndex = 41;
-            this.txt_mesNac.Text = "Mes";
+            this.txtNombresEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtNombresEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombresEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombresEstudiante.ForeColor = System.Drawing.Color.LightGray;
+            this.txtNombresEstudiante.Location = new System.Drawing.Point(278, 37);
+            this.txtNombresEstudiante.Name = "txtNombresEstudiante";
+            this.txtNombresEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtNombresEstudiante.TabIndex = 1;
+            this.txtNombresEstudiante.Tag = " Nombres";
+            this.txtNombresEstudiante.Text = " Nombres";
+            this.txtNombresEstudiante.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtNombresEstudiante.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // comboBox8
+            // cmbGenero
             // 
-            this.comboBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.ForeColor = System.Drawing.Color.LightGray;
-            this.comboBox8.ItemHeight = 15;
-            this.comboBox8.Location = new System.Drawing.Point(125, 73);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(210, 23);
-            this.comboBox8.TabIndex = 39;
-            this.comboBox8.Text = "Caracterizacion";
+            this.cmbGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGenero.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbGenero.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cmbGenero.ItemHeight = 15;
+            this.cmbGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.cmbGenero.Location = new System.Drawing.Point(744, 36);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(104, 23);
+            this.cmbGenero.TabIndex = 3;
+            this.cmbGenero.Tag = "Genero";
+            this.cmbGenero.Text = "Genero";
             // 
-            // cmb_categ
+            // gbDatosResponsable
             // 
-            this.cmb_categ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_categ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_categ.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_categ.ItemHeight = 15;
-            this.cmb_categ.Location = new System.Drawing.Point(15, 73);
-            this.cmb_categ.Name = "cmb_categ";
-            this.cmb_categ.Size = new System.Drawing.Size(104, 23);
-            this.cmb_categ.TabIndex = 38;
-            this.cmb_categ.Text = "Categoria";
+            this.gbDatosResponsable.Controls.Add(this.cmbParentesco);
+            this.gbDatosResponsable.Controls.Add(this.txtTelefono2);
+            this.gbDatosResponsable.Controls.Add(this.txtTelefono1);
+            this.gbDatosResponsable.Controls.Add(this.txtOcupacion);
+            this.gbDatosResponsable.Controls.Add(this.cmbNacionalidadResponsable);
+            this.gbDatosResponsable.Controls.Add(this.cmbLocalidadResponsable);
+            this.gbDatosResponsable.Controls.Add(this.txtDireccionResponsable);
+            this.gbDatosResponsable.Controls.Add(this.txtDNI);
+            this.gbDatosResponsable.Controls.Add(this.txtApellidosResponsable);
+            this.gbDatosResponsable.Controls.Add(this.txtNombresResponsable);
+            this.gbDatosResponsable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbDatosResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDatosResponsable.ForeColor = System.Drawing.Color.White;
+            this.gbDatosResponsable.Location = new System.Drawing.Point(20, 327);
+            this.gbDatosResponsable.Name = "gbDatosResponsable";
+            this.gbDatosResponsable.Padding = new System.Windows.Forms.Padding(10);
+            this.gbDatosResponsable.Size = new System.Drawing.Size(767, 183);
+            this.gbDatosResponsable.TabIndex = 103;
+            this.gbDatosResponsable.TabStop = false;
+            this.gbDatosResponsable.Text = "Datos del responsable";
             // 
-            // cmb_estLocal
+            // cmbParentesco
             // 
-            this.cmb_estLocal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_estLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_estLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_estLocal.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_estLocal.ItemHeight = 15;
-            this.cmb_estLocal.Location = new System.Drawing.Point(447, 136);
-            this.cmb_estLocal.Name = "cmb_estLocal";
-            this.cmb_estLocal.Size = new System.Drawing.Size(210, 23);
-            this.cmb_estLocal.TabIndex = 37;
-            this.cmb_estLocal.Text = "Localidad";
+            this.cmbParentesco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbParentesco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbParentesco.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbParentesco.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbParentesco.ItemHeight = 15;
+            this.cmbParentesco.Items.AddRange(new object[] {
+            "Madre",
+            "Padre",
+            "Otro"});
+            this.cmbParentesco.Location = new System.Drawing.Point(12, 135);
+            this.cmbParentesco.Name = "cmbParentesco";
+            this.cmbParentesco.Size = new System.Drawing.Size(210, 23);
+            this.cmbParentesco.TabIndex = 53;
+            this.cmbParentesco.Tag = "Parentesco";
+            this.cmbParentesco.Text = "Parentesco";
             // 
-            // txt_estDir
+            // txtTelefono2
             // 
-            this.txt_estDir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_estDir.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_estDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estDir.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_estDir.Location = new System.Drawing.Point(15, 137);
-            this.txt_estDir.Name = "txt_estDir";
-            this.txt_estDir.Size = new System.Drawing.Size(210, 22);
-            this.txt_estDir.TabIndex = 36;
-            this.txt_estDir.Text = "Direccion";
+            this.txtTelefono2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtTelefono2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono2.ForeColor = System.Drawing.Color.LightGray;
+            this.txtTelefono2.Location = new System.Drawing.Point(444, 97);
+            this.txtTelefono2.Name = "txtTelefono2";
+            this.txtTelefono2.Size = new System.Drawing.Size(210, 22);
+            this.txtTelefono2.TabIndex = 50;
+            this.txtTelefono2.Tag = "Telefono 2";
+            this.txtTelefono2.Text = "Telefono 2";
+            this.txtTelefono2.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtTelefono2.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // txt_estEntrecall
+            // txtTelefono1
             // 
-            this.txt_estEntrecall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_estEntrecall.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_estEntrecall.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estEntrecall.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_estEntrecall.Location = new System.Drawing.Point(231, 137);
-            this.txt_estEntrecall.Name = "txt_estEntrecall";
-            this.txt_estEntrecall.Size = new System.Drawing.Size(210, 22);
-            this.txt_estEntrecall.TabIndex = 34;
-            this.txt_estEntrecall.Text = "Entre Calles";
+            this.txtTelefono1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtTelefono1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono1.ForeColor = System.Drawing.Color.LightGray;
+            this.txtTelefono1.Location = new System.Drawing.Point(228, 97);
+            this.txtTelefono1.Name = "txtTelefono1";
+            this.txtTelefono1.Size = new System.Drawing.Size(210, 22);
+            this.txtTelefono1.TabIndex = 49;
+            this.txtTelefono1.Tag = "Telefono 1";
+            this.txtTelefono1.Text = "Telefono 1";
+            this.txtTelefono1.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtTelefono1.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // txt_cuil
+            // txtOcupacion
             // 
-            this.txt_cuil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_cuil.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_cuil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cuil.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_cuil.Location = new System.Drawing.Point(15, 40);
-            this.txt_cuil.Name = "txt_cuil";
-            this.txt_cuil.Size = new System.Drawing.Size(210, 22);
-            this.txt_cuil.TabIndex = 33;
-            this.txt_cuil.Text = " CUIL";
+            this.txtOcupacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtOcupacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOcupacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOcupacion.ForeColor = System.Drawing.Color.LightGray;
+            this.txtOcupacion.Location = new System.Drawing.Point(12, 97);
+            this.txtOcupacion.Name = "txtOcupacion";
+            this.txtOcupacion.Size = new System.Drawing.Size(210, 22);
+            this.txtOcupacion.TabIndex = 48;
+            this.txtOcupacion.Tag = "Ocupacion";
+            this.txtOcupacion.Text = "Ocupacion";
+            this.txtOcupacion.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtOcupacion.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // txt_estApell
+            // cmbNacionalidadResponsable
             // 
-            this.txt_estApell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_estApell.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_estApell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estApell.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_estApell.Location = new System.Drawing.Point(447, 40);
-            this.txt_estApell.Name = "txt_estApell";
-            this.txt_estApell.Size = new System.Drawing.Size(210, 22);
-            this.txt_estApell.TabIndex = 2;
-            this.txt_estApell.Text = " Apellidos";
+            this.cmbNacionalidadResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbNacionalidadResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbNacionalidadResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNacionalidadResponsable.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbNacionalidadResponsable.ItemHeight = 15;
+            this.cmbNacionalidadResponsable.Items.AddRange(new object[] {
+            "argentina",
+            "chile",
+            "peru",
+            "uruguay"});
+            this.cmbNacionalidadResponsable.Location = new System.Drawing.Point(444, 62);
+            this.cmbNacionalidadResponsable.Name = "cmbNacionalidadResponsable";
+            this.cmbNacionalidadResponsable.Size = new System.Drawing.Size(210, 23);
+            this.cmbNacionalidadResponsable.TabIndex = 47;
+            this.cmbNacionalidadResponsable.Tag = "Nacionalidad";
+            this.cmbNacionalidadResponsable.Text = "Nacionalidad";
             // 
-            // txt_estNom
+            // cmbLocalidadResponsable
             // 
-            this.txt_estNom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_estNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_estNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estNom.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_estNom.Location = new System.Drawing.Point(231, 40);
-            this.txt_estNom.Name = "txt_estNom";
-            this.txt_estNom.Size = new System.Drawing.Size(210, 22);
-            this.txt_estNom.TabIndex = 1;
-            this.txt_estNom.Text = " Nombres";
+            this.cmbLocalidadResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.cmbLocalidadResponsable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbLocalidadResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLocalidadResponsable.ForeColor = System.Drawing.Color.LightGray;
+            this.cmbLocalidadResponsable.ItemHeight = 15;
+            this.cmbLocalidadResponsable.Items.AddRange(new object[] {
+            "glew",
+            "ale korn",
+            "guernica"});
+            this.cmbLocalidadResponsable.Location = new System.Drawing.Point(228, 62);
+            this.cmbLocalidadResponsable.Name = "cmbLocalidadResponsable";
+            this.cmbLocalidadResponsable.Size = new System.Drawing.Size(210, 23);
+            this.cmbLocalidadResponsable.TabIndex = 39;
+            this.cmbLocalidadResponsable.Tag = "Localidad";
+            this.cmbLocalidadResponsable.Text = "Localidad";
             // 
-            // cmb_genero
+            // txtDireccionResponsable
             // 
-            this.cmb_genero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_genero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_genero.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_genero.ItemHeight = 15;
-            this.cmb_genero.Location = new System.Drawing.Point(663, 40);
-            this.cmb_genero.Name = "cmb_genero";
-            this.cmb_genero.Size = new System.Drawing.Size(104, 23);
-            this.cmb_genero.TabIndex = 31;
-            this.cmb_genero.Text = "Genero";
+            this.txtDireccionResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtDireccionResponsable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccionResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccionResponsable.ForeColor = System.Drawing.Color.LightGray;
+            this.txtDireccionResponsable.Location = new System.Drawing.Point(12, 63);
+            this.txtDireccionResponsable.Name = "txtDireccionResponsable";
+            this.txtDireccionResponsable.Size = new System.Drawing.Size(210, 22);
+            this.txtDireccionResponsable.TabIndex = 38;
+            this.txtDireccionResponsable.Tag = "Direccion";
+            this.txtDireccionResponsable.Text = "Direccion";
+            this.txtDireccionResponsable.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtDireccionResponsable.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // groupBox5
+            // txtDNI
             // 
-            this.groupBox5.Controls.Add(this.btn_altaRegistrar);
-            this.groupBox5.Controls.Add(this.btn_altaCancel);
-            this.groupBox5.Controls.Add(this.txt_resTel2);
-            this.groupBox5.Controls.Add(this.txt_resTel1);
-            this.groupBox5.Controls.Add(this.txt_resOcup);
-            this.groupBox5.Controls.Add(this.cmb_resNacion);
-            this.groupBox5.Controls.Add(this.cmb_resLocal);
-            this.groupBox5.Controls.Add(this.txt_resDir);
-            this.groupBox5.Controls.Add(this.txt_dni);
-            this.groupBox5.Controls.Add(this.txt_resApell);
-            this.groupBox5.Controls.Add(this.txt_resNom);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(0, 318);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(824, 216);
-            this.groupBox5.TabIndex = 103;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Datos del responsable";
+            this.txtDNI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDNI.ForeColor = System.Drawing.Color.LightGray;
+            this.txtDNI.Location = new System.Drawing.Point(12, 30);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(210, 22);
+            this.txtDNI.TabIndex = 36;
+            this.txtDNI.Tag = " DNI";
+            this.txtDNI.Text = " DNI";
+            this.txtDNI.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtDNI.Leave += new System.EventHandler(this.RellenarTexto);
             // 
-            // btn_altaRegistrar
+            // txtApellidosResponsable
             // 
-            this.btn_altaRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_altaRegistrar.Location = new System.Drawing.Point(631, 144);
-            this.btn_altaRegistrar.Name = "btn_altaRegistrar";
-            this.btn_altaRegistrar.Size = new System.Drawing.Size(181, 56);
-            this.btn_altaRegistrar.TabIndex = 52;
-            this.btn_altaRegistrar.Text = "Registrar";
-            this.btn_altaRegistrar.UseVisualStyleBackColor = false;
+            this.txtApellidosResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtApellidosResponsable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellidosResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidosResponsable.ForeColor = System.Drawing.Color.LightGray;
+            this.txtApellidosResponsable.Location = new System.Drawing.Point(444, 30);
+            this.txtApellidosResponsable.Name = "txtApellidosResponsable";
+            this.txtApellidosResponsable.Size = new System.Drawing.Size(210, 22);
+            this.txtApellidosResponsable.TabIndex = 35;
+            this.txtApellidosResponsable.Tag = " Apellidos";
+            this.txtApellidosResponsable.Text = " Apellidos";
+            this.txtApellidosResponsable.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtApellidosResponsable.Leave += new System.EventHandler(this.RellenarTexto);
+            // 
+            // txtNombresResponsable
+            // 
+            this.txtNombresResponsable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtNombresResponsable.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombresResponsable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombresResponsable.ForeColor = System.Drawing.Color.LightGray;
+            this.txtNombresResponsable.Location = new System.Drawing.Point(228, 30);
+            this.txtNombresResponsable.Name = "txtNombresResponsable";
+            this.txtNombresResponsable.Size = new System.Drawing.Size(210, 22);
+            this.txtNombresResponsable.TabIndex = 34;
+            this.txtNombresResponsable.Tag = " Nombres";
+            this.txtNombresResponsable.Text = " Nombres";
+            this.txtNombresResponsable.Enter += new System.EventHandler(this.VaciarTexto);
+            this.txtNombresResponsable.Leave += new System.EventHandler(this.RellenarTexto);
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrar.Location = new System.Drawing.Point(584, 518);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Padding = new System.Windows.Forms.Padding(10);
+            this.btnRegistrar.Size = new System.Drawing.Size(181, 56);
+            this.btnRegistrar.TabIndex = 52;
+            this.btnRegistrar.Tag = "Registrar";
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btn_altaCancel
             // 
             this.btn_altaCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_altaCancel.Location = new System.Drawing.Point(476, 153);
+            this.btn_altaCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_altaCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_altaCancel.ForeColor = System.Drawing.Color.White;
+            this.btn_altaCancel.Location = new System.Drawing.Point(443, 534);
             this.btn_altaCancel.Name = "btn_altaCancel";
             this.btn_altaCancel.Size = new System.Drawing.Size(131, 39);
             this.btn_altaCancel.TabIndex = 51;
+            this.btn_altaCancel.Tag = "Cancelar";
             this.btn_altaCancel.Text = "Cancelar";
             this.btn_altaCancel.UseVisualStyleBackColor = false;
+            this.btn_altaCancel.Visible = false;
             // 
-            // txt_resTel2
+            // error
             // 
-            this.txt_resTel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_resTel2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_resTel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resTel2.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_resTel2.Location = new System.Drawing.Point(444, 97);
-            this.txt_resTel2.Name = "txt_resTel2";
-            this.txt_resTel2.Size = new System.Drawing.Size(210, 22);
-            this.txt_resTel2.TabIndex = 50;
-            this.txt_resTel2.Text = "Telefono 2";
-            // 
-            // txt_resTel1
-            // 
-            this.txt_resTel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_resTel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_resTel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resTel1.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_resTel1.Location = new System.Drawing.Point(228, 97);
-            this.txt_resTel1.Name = "txt_resTel1";
-            this.txt_resTel1.Size = new System.Drawing.Size(210, 22);
-            this.txt_resTel1.TabIndex = 49;
-            this.txt_resTel1.Text = "Telefono 1";
-            // 
-            // txt_resOcup
-            // 
-            this.txt_resOcup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_resOcup.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_resOcup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resOcup.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_resOcup.Location = new System.Drawing.Point(12, 97);
-            this.txt_resOcup.Name = "txt_resOcup";
-            this.txt_resOcup.Size = new System.Drawing.Size(210, 22);
-            this.txt_resOcup.TabIndex = 48;
-            this.txt_resOcup.Text = "Ocupacion";
-            // 
-            // cmb_resNacion
-            // 
-            this.cmb_resNacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_resNacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_resNacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_resNacion.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_resNacion.ItemHeight = 15;
-            this.cmb_resNacion.Location = new System.Drawing.Point(444, 62);
-            this.cmb_resNacion.Name = "cmb_resNacion";
-            this.cmb_resNacion.Size = new System.Drawing.Size(210, 23);
-            this.cmb_resNacion.TabIndex = 47;
-            this.cmb_resNacion.Text = "Nacionalidad";
-            // 
-            // cmb_resLocal
-            // 
-            this.cmb_resLocal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.cmb_resLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmb_resLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_resLocal.ForeColor = System.Drawing.Color.LightGray;
-            this.cmb_resLocal.ItemHeight = 15;
-            this.cmb_resLocal.Location = new System.Drawing.Point(228, 62);
-            this.cmb_resLocal.Name = "cmb_resLocal";
-            this.cmb_resLocal.Size = new System.Drawing.Size(210, 23);
-            this.cmb_resLocal.TabIndex = 39;
-            this.cmb_resLocal.Text = "Localidad";
-            // 
-            // txt_resDir
-            // 
-            this.txt_resDir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_resDir.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_resDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resDir.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_resDir.Location = new System.Drawing.Point(12, 63);
-            this.txt_resDir.Name = "txt_resDir";
-            this.txt_resDir.Size = new System.Drawing.Size(210, 22);
-            this.txt_resDir.TabIndex = 38;
-            this.txt_resDir.Text = "Direccion";
-            // 
-            // txt_dni
-            // 
-            this.txt_dni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_dni.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dni.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_dni.Location = new System.Drawing.Point(12, 30);
-            this.txt_dni.Name = "txt_dni";
-            this.txt_dni.Size = new System.Drawing.Size(210, 22);
-            this.txt_dni.TabIndex = 36;
-            this.txt_dni.Text = "DNI";
-            // 
-            // txt_resApell
-            // 
-            this.txt_resApell.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_resApell.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_resApell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resApell.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_resApell.Location = new System.Drawing.Point(444, 30);
-            this.txt_resApell.Name = "txt_resApell";
-            this.txt_resApell.Size = new System.Drawing.Size(210, 22);
-            this.txt_resApell.TabIndex = 35;
-            this.txt_resApell.Text = " Apellidos";
-            // 
-            // txt_resNom
-            // 
-            this.txt_resNom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txt_resNom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_resNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_resNom.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_resNom.Location = new System.Drawing.Point(228, 30);
-            this.txt_resNom.Name = "txt_resNom";
-            this.txt_resNom.Size = new System.Drawing.Size(210, 22);
-            this.txt_resNom.TabIndex = 34;
-            this.txt_resNom.Text = " Nombres";
+            this.error.ContainerControl = this;
             // 
             // NuevoEstudianteFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
             this.ClientSize = new System.Drawing.Size(824, 570);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.cmb_caract);
+            this.Controls.Add(this.btn_altaCancel);
+            this.Controls.Add(this.gbDatosResponsable);
+            this.Controls.Add(this.gbDatosEstudiante);
+            this.Controls.Add(this.btnRegistrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoEstudianteFrm";
+            this.Padding = new System.Windows.Forms.Padding(20);
             this.Text = "NuevoEstudianteFrm";
-            this.cmb_caract.ResumeLayout(false);
-            this.cmb_caract.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.Load += new System.EventHandler(this.NuevoEstudianteFrm_Load);
+            this.gbDatosEstudiante.ResumeLayout(false);
+            this.gbDatosEstudiante.PerformLayout();
+            this.gbObservaciones.ResumeLayout(false);
+            this.gbObservaciones.PerformLayout();
+            this.gbDatosResponsable.ResumeLayout(false);
+            this.gbDatosResponsable.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox cmb_caract;
-        private System.Windows.Forms.TextBox txt_estEntrecall;
-        private System.Windows.Forms.TextBox txt_cuil;
-        private System.Windows.Forms.TextBox txt_estApell;
-        private System.Windows.Forms.TextBox txt_estNom;
-        private System.Windows.Forms.ComboBox cmb_genero;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox cmb_categ;
-        private System.Windows.Forms.ComboBox cmb_estLocal;
-        private System.Windows.Forms.TextBox txt_estDir;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox cmb_estNacion;
-        private System.Windows.Forms.ComboBox cmb_estTurno;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txt_anioIng;
-        private System.Windows.Forms.TextBox txt_diaIng;
-        private System.Windows.Forms.TextBox txt_mesIng;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_anioNac;
-        private System.Windows.Forms.TextBox txt_diaNac;
-        private System.Windows.Forms.TextBox txt_mesNac;
+        private System.Windows.Forms.GroupBox gbDatosEstudiante;
+        private System.Windows.Forms.TextBox txtEntreCallesEstudiante;
+        private System.Windows.Forms.TextBox txtCuil;
+        private System.Windows.Forms.TextBox txtApellidosEstudiante;
+        private System.Windows.Forms.TextBox txtNombresEstudiante;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.ComboBox cmbCaracterizacion;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.ComboBox cmbLocalidadEstudiante;
+        private System.Windows.Forms.TextBox txtDireccionEstudiante;
+        private System.Windows.Forms.GroupBox gbObservaciones;
+        private System.Windows.Forms.ComboBox cmbNacionalidadEstudiante;
+        private System.Windows.Forms.ComboBox cmbTurno;
         private System.Windows.Forms.TextBox txt_obsDet;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox5;
@@ -643,17 +673,21 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btn_altaRegistrar;
+        private System.Windows.Forms.GroupBox gbDatosResponsable;
+        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btn_altaCancel;
-        private System.Windows.Forms.TextBox txt_resTel2;
-        private System.Windows.Forms.TextBox txt_resTel1;
-        private System.Windows.Forms.TextBox txt_resOcup;
-        private System.Windows.Forms.ComboBox cmb_resNacion;
-        private System.Windows.Forms.ComboBox cmb_resLocal;
-        private System.Windows.Forms.TextBox txt_resDir;
-        private System.Windows.Forms.TextBox txt_dni;
-        private System.Windows.Forms.TextBox txt_resApell;
-        private System.Windows.Forms.TextBox txt_resNom;
+        private System.Windows.Forms.TextBox txtTelefono2;
+        private System.Windows.Forms.TextBox txtTelefono1;
+        private System.Windows.Forms.TextBox txtOcupacion;
+        private System.Windows.Forms.ComboBox cmbNacionalidadResponsable;
+        private System.Windows.Forms.ComboBox cmbLocalidadResponsable;
+        private System.Windows.Forms.TextBox txtDireccionResponsable;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.TextBox txtApellidosResponsable;
+        private System.Windows.Forms.TextBox txtNombresResponsable;
+        private System.Windows.Forms.ErrorProvider error;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
+        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
+        private System.Windows.Forms.ComboBox cmbParentesco;
     }
 }
