@@ -20,11 +20,18 @@ namespace Presentacion.Formularios
       
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (validacion.ValidadDatosLogin(txtEmail.Text, txtPassword.Text))
+            if (validacion.ValidadDatosLogin(txtEmail, txtPassword))
             {
+                errorP.Clear();
                 PrincipalFrm principal = new PrincipalFrm();
                 Instancia.Hide();
+                txtPassword.Text = "";
                 principal.Show();
+            }
+            else
+            {
+                errorP.Clear();
+                errorP.SetError(txtEmail, "Datos Incorrectos, Vuelva a intentarlo");
             }
         }
     

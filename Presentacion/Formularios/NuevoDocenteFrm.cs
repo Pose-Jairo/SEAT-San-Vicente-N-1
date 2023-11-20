@@ -50,14 +50,13 @@ namespace Presentacion.Formularios
                 + txt_DocDNI.Text + ",'" + txt_docNom.Text + "','" + txt_docApell.Text + "','" + txt_docEmail.Text + "','"
                 + txt_DocContra.Text + "')";
                 //procede a verificar la consulta y la ejecuta
-                validacion.PruebaAlta(AltaDocente);
+                validacion.PruebaAbm(AltaDocente);
                 //arma la consulta de telefonos
                 string AltaTelefonos = "INSERT INTO Tel_doc(Telefono, Id_docente) VALUES(" + txt_docTel1.Text + ", " + ValorCodigo(txt_DocDNI) + ")";
                 //procede a verificar la consulta y la ejecuta
-                validacion.PruebaAlta(AltaTelefonos);
+                validacion.PruebaAbm(AltaTelefonos);
                 //actualiza la tabla de docentes
                 dgv_docVista.DataSource = Metodo.Actualizar(Tabla, consulta);
-
             }
 
         }

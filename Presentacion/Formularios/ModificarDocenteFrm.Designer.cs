@@ -146,7 +146,7 @@
             this.txt_DocDNIUPD.Name = "txt_DocDNIUPD";
             this.txt_DocDNIUPD.Size = new System.Drawing.Size(120, 13);
             this.txt_DocDNIUPD.TabIndex = 0;
-            this.txt_DocDNIUPD.Tag = "txt_DocDNI";
+            this.txt_DocDNIUPD.Tag = "DNI";
             // 
             // btn_docCancelUPD
             // 
@@ -267,11 +267,17 @@
             // 
             this.dgvDocenteVistaUPD.AllowUserToAddRows = false;
             this.dgvDocenteVistaUPD.AllowUserToDeleteRows = false;
+            this.dgvDocenteVistaUPD.AllowUserToResizeColumns = false;
+            this.dgvDocenteVistaUPD.AllowUserToResizeRows = false;
+            this.dgvDocenteVistaUPD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDocenteVistaUPD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
             this.dgvDocenteVistaUPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDocenteVistaUPD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDocenteVistaUPD.Location = new System.Drawing.Point(0, 0);
+            this.dgvDocenteVistaUPD.MultiSelect = false;
             this.dgvDocenteVistaUPD.Name = "dgvDocenteVistaUPD";
             this.dgvDocenteVistaUPD.ReadOnly = true;
+            this.dgvDocenteVistaUPD.RowHeadersVisible = false;
             this.dgvDocenteVistaUPD.Size = new System.Drawing.Size(824, 247);
             this.dgvDocenteVistaUPD.TabIndex = 6;
             this.dgvDocenteVistaUPD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocenteVistaUPD_CellClick);

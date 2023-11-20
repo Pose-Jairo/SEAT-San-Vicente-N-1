@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFmr));
             this.panelEncabezadoLogin = new System.Windows.Forms.Panel();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
@@ -35,23 +36,21 @@
             this.panelLogo2 = new System.Windows.Forms.Panel();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
-            this.panelEmail = new System.Windows.Forms.Panel();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.panelPassword = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelUsuario = new System.Windows.Forms.Label();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.errorP = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelEncabezadoLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.panelLogin.SuspendLayout();
-            this.panelEmail.SuspendLayout();
-            this.panelPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorP)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEncabezadoLogin
@@ -97,7 +96,7 @@
             // 
             // panelLogo2
             // 
-            this.panelLogo2.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
+            this.panelLogo2.BackgroundImage = global::Presentacion.Properties.Resources.Logo_CEAT_San_Vicente_1;
             this.panelLogo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelLogo2.Location = new System.Drawing.Point(3, 3);
             this.panelLogo2.Name = "panelLogo2";
@@ -110,19 +109,19 @@
             this.labelTitulo.ForeColor = System.Drawing.Color.White;
             this.labelTitulo.Location = new System.Drawing.Point(25, 4);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(117, 13);
+            this.labelTitulo.Size = new System.Drawing.Size(44, 13);
             this.labelTitulo.TabIndex = 7;
-            this.labelTitulo.Text = "CEAT Nº1 San Vicente";
+            this.labelTitulo.Text = "C.E.A.T";
             // 
             // panelLogin
             // 
             this.panelLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(38)))), ((int)(((byte)(83)))));
             this.panelLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLogin.Controls.Add(this.panelEmail);
-            this.panelLogin.Controls.Add(this.panelPassword);
+            this.panelLogin.Controls.Add(this.txtPassword);
+            this.panelLogin.Controls.Add(this.txtEmail);
             this.panelLogin.Controls.Add(this.panelLogo);
             this.panelLogin.Controls.Add(this.labelPassword);
-            this.panelLogin.Controls.Add(this.labelEmail);
+            this.panelLogin.Controls.Add(this.labelUsuario);
             this.panelLogin.Controls.Add(this.btnIniciarSesion);
             this.panelLogin.Controls.Add(this.shapeContainer1);
             this.panelLogin.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -131,14 +130,18 @@
             this.panelLogin.Size = new System.Drawing.Size(330, 430);
             this.panelLogin.TabIndex = 0;
             // 
-            // panelEmail
+            // txtPassword
             // 
-            this.panelEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panelEmail.Controls.Add(this.txtEmail);
-            this.panelEmail.Location = new System.Drawing.Point(45, 190);
-            this.panelEmail.Name = "panelEmail";
-            this.panelEmail.Size = new System.Drawing.Size(240, 30);
-            this.panelEmail.TabIndex = 8;
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.Location = new System.Drawing.Point(45, 260);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(240, 30);
+            this.txtPassword.TabIndex = 10;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 
@@ -146,39 +149,19 @@
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(1, 6);
+            this.txtEmail.Location = new System.Drawing.Point(45, 190);
+            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(238, 17);
+            this.txtEmail.Size = new System.Drawing.Size(240, 30);
             this.txtEmail.TabIndex = 9;
-            // 
-            // panelPassword
-            // 
-            this.panelPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.panelPassword.Controls.Add(this.txtPassword);
-            this.panelPassword.Location = new System.Drawing.Point(45, 260);
-            this.panelPassword.Name = "panelPassword";
-            this.panelPassword.Size = new System.Drawing.Size(240, 30);
-            this.panelPassword.TabIndex = 7;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(136)))), ((int)(((byte)(248)))));
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
-            this.txtPassword.Location = new System.Drawing.Point(1, 6);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(238, 17);
-            this.txtPassword.TabIndex = 10;
-            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // panelLogo
             // 
-            this.panelLogo.BackgroundImage = global::Presentacion.Properties.Resources.icons8_school_100;
+            this.panelLogo.BackgroundImage = global::Presentacion.Properties.Resources.Logo_CEAT_San_Vicente_1;
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLogo.Location = new System.Drawing.Point(90, 20);
+            this.panelLogo.Location = new System.Drawing.Point(95, 20);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(150, 150);
+            this.panelLogo.Size = new System.Drawing.Size(140, 140);
             this.panelLogo.TabIndex = 6;
             // 
             // labelPassword
@@ -192,16 +175,16 @@
             this.labelPassword.TabIndex = 4;
             this.labelPassword.Text = "Contraseña:";
             // 
-            // labelEmail
+            // labelUsuario
             // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.ForeColor = System.Drawing.Color.White;
-            this.labelEmail.Location = new System.Drawing.Point(42, 170);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(51, 16);
-            this.labelEmail.TabIndex = 3;
-            this.labelEmail.Text = "Email:";
+            this.labelUsuario.AutoSize = true;
+            this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsuario.ForeColor = System.Drawing.Color.White;
+            this.labelUsuario.Location = new System.Drawing.Point(42, 171);
+            this.labelUsuario.Name = "labelUsuario";
+            this.labelUsuario.Size = new System.Drawing.Size(66, 16);
+            this.labelUsuario.TabIndex = 3;
+            this.labelUsuario.Text = "Usuario:";
             // 
             // btnIniciarSesion
             // 
@@ -247,6 +230,10 @@
             this.lineShape2.Y1 = 290;
             this.lineShape2.Y2 = 290;
             // 
+            // errorP
+            // 
+            this.errorP.ContainerControl = this;
+            // 
             // LoginFmr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,10 +255,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
-            this.panelEmail.ResumeLayout(false);
-            this.panelEmail.PerformLayout();
-            this.panelPassword.ResumeLayout(false);
-            this.panelPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,17 +268,16 @@
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.Button btnIniciarSesion;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
-        private System.Windows.Forms.Panel panelPassword;
-        private System.Windows.Forms.Panel panelEmail;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.PictureBox pbSalir;
+        private System.Windows.Forms.ErrorProvider errorP;
 
 
     }

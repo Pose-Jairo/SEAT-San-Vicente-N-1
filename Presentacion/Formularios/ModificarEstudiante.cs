@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Logica.Negocio;
 
@@ -38,9 +33,19 @@ namespace Presentacion.Formularios
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            if (indice != -1)
+            {
+                this.Close();
+                NuevoEstudianteFrm.Instancia.Accion = "Modificar";
+                PrincipalFrm.Instancia.AbrirFormulario("btnAltaEstudiante");                         
+            }
         }
 
+        int indice = 0;
 
+        private void dgvModificarAlumno_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           indice = e.RowIndex;
+        }     
     }
 }

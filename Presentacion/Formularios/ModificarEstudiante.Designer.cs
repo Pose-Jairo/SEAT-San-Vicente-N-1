@@ -58,6 +58,7 @@
             this.dgvModificarAlumno.ReadOnly = true;
             this.dgvModificarAlumno.Size = new System.Drawing.Size(824, 570);
             this.dgvModificarAlumno.TabIndex = 0;
+            this.dgvModificarAlumno.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvModificarAlumno_CellClick);
             // 
             // panel1
             // 
@@ -189,14 +190,17 @@
             // 
             // btnModificar
             // 
+            this.btnModificar.BackColor = System.Drawing.Color.MediumPurple;
             this.btnModificar.Enabled = false;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(636, 40);
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(642, 43);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(156, 50);
             this.btnModificar.TabIndex = 0;
             this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // ModificarEstudiante

@@ -68,6 +68,9 @@ namespace Presentacion.Formularios
                 case "btnModificarDocente":
                     OpenFormHijo(new ModificarDocenteFrm());
                     break;
+                case "btnBajaDocente":
+                    OpenFormHijo(new BajaDocenteFrm());
+                    break;
             }
         }
 

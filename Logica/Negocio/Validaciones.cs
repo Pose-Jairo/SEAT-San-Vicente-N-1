@@ -13,13 +13,13 @@ namespace Logica.Negocio
         ConexionConBD BDConexion = new ConexionConBD();
         Metodos metodos = new Metodos();
 
-        public void PruebaAlta(string consulta)
+        public void PruebaAbm(string consulta)
         {
-            bool Alta = false;
+            bool ABM = false;
 
-            Alta = BDConexion.EjecutarConsulta(consulta);
+            ABM = BDConexion.EjecutarConsulta(consulta);
 
-            if (Alta == true)
+            if (ABM == true)
             {
                 MessageBox.Show("Alta Creada");
             }
@@ -76,30 +76,29 @@ namespace Logica.Negocio
             }         
        }
 
-       public bool ValidadDatosLogin(string email, string contraseña)
+       public bool ValidadDatosLogin(TextBox email, TextBox pass)
        {
-           string cadenaEmail = "SELECT Contraseña FROM Docente WHERE Email ='" + email + "'";
+           string cadenaEmail = "SELECT Contraseña FROM Docente WHERE Email ='" + email.Text + "'";
 
            using (OleDbDataReader lector = BDConexion.Lector(cadenaEmail))
                if (lector.Read())
                {
                    // El correo electrónico existe, ahora compara las contraseñas.
                    string contraseñaAlmacenada = lector["Contraseña"].ToString();
-                   if (contraseña == contraseñaAlmacenada)
+                   if (pass.Text == contraseñaAlmacenada)
                    {
                        return true;
                    }
                    else
-                   {
-                       MessageBox.Show("error");
+                   {                    
                        return false;
                    }
                }
                else
-               {
-                   MessageBox.Show("error");
+               {                  
                    return false;
                }         
        }
+
     }
 }

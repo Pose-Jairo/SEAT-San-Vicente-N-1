@@ -5,6 +5,13 @@ E:\Seat San Vicente N°1\Logica\bin\Debug\Datos.pdb
 E:\Seat San Vicente N°1\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
 E:\Seat San Vicente N°1\Logica\obj\Debug\Logica.dll
 E:\Seat San Vicente N°1\Logica\obj\Debug\Logica.pdb
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.dll
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.pdb
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.dll
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.pdb
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.dll
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.pdb
+D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.dll
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.dll
@@ -12,12 +19,10 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.dll
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.pdb
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.dll
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.pdb
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.dll
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.pdb
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csproj.CopyComplete
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.dll
-D:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.pdb
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.dll
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\bin\Debug\Logica.pdb
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.dll
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\bin\Debug\Datos.pdb
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.dll
+D:\Descargas\SEAT-San-Vicente-N-1(Grupo 4)\SEAT-San-Vicente-N-1\Logica\obj\Debug\Logica.pdb

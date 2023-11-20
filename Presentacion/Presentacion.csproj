@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\BajaDocenteFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\BajaDocenteFrm.Designer.cs">
+      <DependentUpon>BajaDocenteFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\DocentesFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\BajaDocenteFrm.resx">
+      <DependentUpon>BajaDocenteFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DocentesFrm.resx">
       <DependentUpon>DocentesFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,12 +188,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logica\Logica.csproj">
-      <Project>{92D2BAA6-5086-4656-9CAE-929CE8F6BB48}</Project>
-      <Name>Logica</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8-book-60.png" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +228,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-preschool-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{92D2BAA6-5086-4656-9CAE-929CE8F6BB48}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo CEAT San Vicente .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo CEAT San Vicente_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo CEAT San Vicente_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -25,8 +25,6 @@ namespace Presentacion.Formularios
 
         string consultaUPD = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido, Docente.Email, Docente.Contraseña, Tel_doc.Telefono FROM Docente INNER JOIN Tel_doc ON Tel_doc.Id_docente = Docente.Id_docente";
 
-        int Indice_ID = 0;
-
         private void ModificarDocenteFrm_Load(object sender, EventArgs e)
         {
             //llama la tabla docente y tel, lo muestra en el DGV...
@@ -45,12 +43,11 @@ namespace Presentacion.Formularios
             int indice = e.RowIndex;
 
 
-            if (indice > 0)
+            if (indice !=-1)
             {
                 try
                 {
                     carga_tabla(indice);
-                    Indice_ID = ValorCodigo(txt_DocDNIUPD);
                 }
                 catch
                 {
@@ -72,22 +69,16 @@ namespace Presentacion.Formularios
         private void btn_docUPDATE_Click(object sender, EventArgs e)
         {
             //arma la consulta de UPDATE
-            string UpdateDocente = "UPDATE Docente SET DNI =" +txt_DocDNIUPD.Text 
-            + ", Nombre ='" + txt_docNomUPD.Text +"', Apellido = '" +txt_docApellUPD.Text
-            + "', Email ='" + txt_docEmailUPD.Text +"',Contraseña ='" +txt_DocContraUPD.Text
-            + "',WHERE Id_Docente =" +Indice_ID;
+            string UpdateDocente = "UPDATE Docente SET DNI='" +txt_DocDNIUPD.Text 
+            + "',Nombre='" + txt_docNomUPD.Text +"',Apellido='" +txt_docApellUPD.Text
+            + "',Email='" + txt_docEmailUPD.Text +"',Contraseña='" +txt_DocContraUPD.Text
+            + "' WHERE Id_docente=" + Metodo.ValorCodigo(txt_DocDNIUPD) + ";";
+
+            validacion.PruebaAbm(UpdateDocente);
+            dgvDocenteVistaUPD.DataSource = Metodo.Actualizar(TablaUPD, consultaUPD);
         }
 
         //Metodo que busca la Id de una tabla
-        public int ValorCodigo(Control objeto)
-        {
-            int codigoDeTabla = 0;
-
-            codigoDeTabla = Metodo.ConseguirCodigoDeTabla(objeto.Tag.ToString(), objeto.Text);
-
-            return codigoDeTabla;
-        }
-
    
     }
 }

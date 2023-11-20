@@ -50,8 +50,12 @@ namespace Logica.Negocio
                     cadenaParaTabla = "SELECT Id_resp FROM Responsable WHERE DNI=" + valorCampoDeTabla;
                     codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
                     break;
-                case "txt_DocDNI":
-                    cadenaParaTabla = "SELECT Id_Docente FROM Docente WHERE DNI=" + valorCampoDeTabla;
+                case "DNI":
+                    cadenaParaTabla = "SELECT Id_docente FROM Docente WHERE DNI='" + valorCampoDeTabla + "'";
+                    codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
+                    break;
+                case " CUIL":
+                    cadenaParaTabla = "SELECT Id_estudiante FROM Estudiante WHERE CUIL='" + valorCampoDeTabla + "'";
                     codigoDeTabla = BDConexion.ObtenerValor(cadenaParaTabla);
                     break;
             }

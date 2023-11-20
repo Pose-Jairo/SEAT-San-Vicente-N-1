@@ -95,7 +95,7 @@
             this.gbDatosEstudiante.Location = new System.Drawing.Point(20, 20);
             this.gbDatosEstudiante.Name = "gbDatosEstudiante";
             this.gbDatosEstudiante.Padding = new System.Windows.Forms.Padding(10);
-            this.gbDatosEstudiante.Size = new System.Drawing.Size(767, 307);
+            this.gbDatosEstudiante.Size = new System.Drawing.Size(784, 307);
             this.gbDatosEstudiante.TabIndex = 0;
             this.gbDatosEstudiante.TabStop = false;
             this.gbDatosEstudiante.Text = "DATOS DEL ESTUDIANTE";
@@ -104,7 +104,7 @@
             // 
             this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(547, 74);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(547, 77);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
             this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaIngreso.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             this.dtpFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(341, 73);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(341, 77);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 22);
             this.dtpFechaNacimiento.TabIndex = 6;
@@ -132,9 +132,9 @@
             this.gbObservaciones.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbObservaciones.ForeColor = System.Drawing.Color.White;
-            this.gbObservaciones.Location = new System.Drawing.Point(10, 197);
+            this.gbObservaciones.Location = new System.Drawing.Point(10, 184);
             this.gbObservaciones.Name = "gbObservaciones";
-            this.gbObservaciones.Size = new System.Drawing.Size(747, 100);
+            this.gbObservaciones.Size = new System.Drawing.Size(764, 113);
             this.gbObservaciones.TabIndex = 47;
             this.gbObservaciones.TabStop = false;
             this.gbObservaciones.Tag = "Observaciones";
@@ -146,7 +146,7 @@
             this.txt_obsDet.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_obsDet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_obsDet.ForeColor = System.Drawing.Color.LightGray;
-            this.txt_obsDet.Location = new System.Drawing.Point(271, 19);
+            this.txt_obsDet.Location = new System.Drawing.Point(464, 16);
             this.txt_obsDet.Multiline = true;
             this.txt_obsDet.Name = "txt_obsDet";
             this.txt_obsDet.Size = new System.Drawing.Size(273, 72);
@@ -159,31 +159,31 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(139, 73);
+            this.checkBox6.Location = new System.Drawing.Point(183, 73);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(102, 20);
+            this.checkBox6.Size = new System.Drawing.Size(54, 20);
             this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "checkBox6";
+            this.checkBox6.Text = "Cud";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(139, 47);
+            this.checkBox5.Location = new System.Drawing.Point(183, 47);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(102, 20);
+            this.checkBox5.Size = new System.Drawing.Size(107, 20);
             this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "checkBox5";
+            this.checkBox5.Text = "Medicacion";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(139, 21);
+            this.checkBox4.Location = new System.Drawing.Point(183, 21);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(102, 20);
+            this.checkBox4.Size = new System.Drawing.Size(198, 20);
             this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.Text = "Percibe Beneficio Social";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -191,9 +191,9 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(6, 73);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(102, 20);
+            this.checkBox3.Size = new System.Drawing.Size(164, 20);
             this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.Text = "Pueblos Originarios";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -201,9 +201,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(6, 47);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 20);
+            this.checkBox2.Size = new System.Drawing.Size(171, 20);
             this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.Text = "Contexto de Encierro";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -211,9 +211,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(6, 21);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 20);
+            this.checkBox1.Size = new System.Drawing.Size(152, 20);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Lengua Extranjera";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // cmbNacionalidadEstudiante
@@ -228,9 +228,9 @@
             "uruguay",
             "peru",
             "chile"});
-            this.cmbNacionalidadEstudiante.Location = new System.Drawing.Point(15, 165);
+            this.cmbNacionalidadEstudiante.Location = new System.Drawing.Point(16, 155);
             this.cmbNacionalidadEstudiante.Name = "cmbNacionalidadEstudiante";
-            this.cmbNacionalidadEstudiante.Size = new System.Drawing.Size(210, 23);
+            this.cmbNacionalidadEstudiante.Size = new System.Drawing.Size(240, 23);
             this.cmbNacionalidadEstudiante.TabIndex = 11;
             this.cmbNacionalidadEstudiante.Tag = "Nacionalidad";
             this.cmbNacionalidadEstudiante.Text = "Nacionalidad";
@@ -245,9 +245,9 @@
             this.cmbTurno.Items.AddRange(new object[] {
             "mañana",
             "tarde"});
-            this.cmbTurno.Location = new System.Drawing.Point(231, 165);
+            this.cmbTurno.Location = new System.Drawing.Point(262, 155);
             this.cmbTurno.Name = "cmbTurno";
-            this.cmbTurno.Size = new System.Drawing.Size(104, 23);
+            this.cmbTurno.Size = new System.Drawing.Size(176, 23);
             this.cmbTurno.TabIndex = 12;
             this.cmbTurno.Tag = "Turno";
             this.cmbTurno.Text = "Turno";
@@ -268,7 +268,7 @@
             "ADYCS",
             "Sordoceguera",
             "Multidiscapacidad"});
-            this.cmbCaracterizacion.Location = new System.Drawing.Point(125, 73);
+            this.cmbCaracterizacion.Location = new System.Drawing.Point(125, 76);
             this.cmbCaracterizacion.Name = "cmbCaracterizacion";
             this.cmbCaracterizacion.Size = new System.Drawing.Size(210, 23);
             this.cmbCaracterizacion.TabIndex = 5;
@@ -286,7 +286,7 @@
             "Lactantes",
             "deambulante",
             "2 años"});
-            this.cmbCategoria.Location = new System.Drawing.Point(15, 73);
+            this.cmbCategoria.Location = new System.Drawing.Point(15, 75);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(104, 23);
             this.cmbCategoria.TabIndex = 4;
@@ -305,9 +305,9 @@
             "glew",
             "ale korn",
             "guernica"});
-            this.cmbLocalidadEstudiante.Location = new System.Drawing.Point(447, 136);
+            this.cmbLocalidadEstudiante.Location = new System.Drawing.Point(508, 114);
             this.cmbLocalidadEstudiante.Name = "cmbLocalidadEstudiante";
-            this.cmbLocalidadEstudiante.Size = new System.Drawing.Size(210, 23);
+            this.cmbLocalidadEstudiante.Size = new System.Drawing.Size(240, 23);
             this.cmbLocalidadEstudiante.TabIndex = 10;
             this.cmbLocalidadEstudiante.Tag = "Localidad";
             this.cmbLocalidadEstudiante.Text = "Localidad";
@@ -318,9 +318,9 @@
             this.txtDireccionEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDireccionEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionEstudiante.ForeColor = System.Drawing.Color.LightGray;
-            this.txtDireccionEstudiante.Location = new System.Drawing.Point(15, 137);
+            this.txtDireccionEstudiante.Location = new System.Drawing.Point(16, 115);
             this.txtDireccionEstudiante.Name = "txtDireccionEstudiante";
-            this.txtDireccionEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtDireccionEstudiante.Size = new System.Drawing.Size(240, 22);
             this.txtDireccionEstudiante.TabIndex = 8;
             this.txtDireccionEstudiante.Tag = "Direccion";
             this.txtDireccionEstudiante.Text = "Direccion";
@@ -333,9 +333,9 @@
             this.txtEntreCallesEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEntreCallesEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEntreCallesEstudiante.ForeColor = System.Drawing.Color.LightGray;
-            this.txtEntreCallesEstudiante.Location = new System.Drawing.Point(231, 137);
+            this.txtEntreCallesEstudiante.Location = new System.Drawing.Point(262, 115);
             this.txtEntreCallesEstudiante.Name = "txtEntreCallesEstudiante";
-            this.txtEntreCallesEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtEntreCallesEstudiante.Size = new System.Drawing.Size(240, 22);
             this.txtEntreCallesEstudiante.TabIndex = 9;
             this.txtEntreCallesEstudiante.Tag = "Entre Calles";
             this.txtEntreCallesEstudiante.Text = "Entre Calles";
@@ -348,9 +348,9 @@
             this.txtCuil.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCuil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCuil.ForeColor = System.Drawing.Color.LightGray;
-            this.txtCuil.Location = new System.Drawing.Point(28, 40);
+            this.txtCuil.Location = new System.Drawing.Point(16, 35);
             this.txtCuil.Name = "txtCuil";
-            this.txtCuil.Size = new System.Drawing.Size(210, 22);
+            this.txtCuil.Size = new System.Drawing.Size(240, 22);
             this.txtCuil.TabIndex = 0;
             this.txtCuil.Tag = " CUIL";
             this.txtCuil.Text = " CUIL";
@@ -363,9 +363,9 @@
             this.txtApellidosEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellidosEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidosEstudiante.ForeColor = System.Drawing.Color.LightGray;
-            this.txtApellidosEstudiante.Location = new System.Drawing.Point(528, 37);
+            this.txtApellidosEstudiante.Location = new System.Drawing.Point(507, 35);
             this.txtApellidosEstudiante.Name = "txtApellidosEstudiante";
-            this.txtApellidosEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtApellidosEstudiante.Size = new System.Drawing.Size(240, 22);
             this.txtApellidosEstudiante.TabIndex = 2;
             this.txtApellidosEstudiante.Tag = " Apellidos";
             this.txtApellidosEstudiante.Text = " Apellidos";
@@ -378,9 +378,9 @@
             this.txtNombresEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombresEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombresEstudiante.ForeColor = System.Drawing.Color.LightGray;
-            this.txtNombresEstudiante.Location = new System.Drawing.Point(278, 37);
+            this.txtNombresEstudiante.Location = new System.Drawing.Point(262, 35);
             this.txtNombresEstudiante.Name = "txtNombresEstudiante";
-            this.txtNombresEstudiante.Size = new System.Drawing.Size(210, 22);
+            this.txtNombresEstudiante.Size = new System.Drawing.Size(240, 22);
             this.txtNombresEstudiante.TabIndex = 1;
             this.txtNombresEstudiante.Tag = " Nombres";
             this.txtNombresEstudiante.Text = " Nombres";
@@ -398,7 +398,7 @@
             this.cmbGenero.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.cmbGenero.Location = new System.Drawing.Point(744, 36);
+            this.cmbGenero.Location = new System.Drawing.Point(444, 155);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(104, 23);
             this.cmbGenero.TabIndex = 3;
@@ -423,7 +423,7 @@
             this.gbDatosResponsable.Location = new System.Drawing.Point(20, 327);
             this.gbDatosResponsable.Name = "gbDatosResponsable";
             this.gbDatosResponsable.Padding = new System.Windows.Forms.Padding(10);
-            this.gbDatosResponsable.Size = new System.Drawing.Size(767, 183);
+            this.gbDatosResponsable.Size = new System.Drawing.Size(784, 177);
             this.gbDatosResponsable.TabIndex = 103;
             this.gbDatosResponsable.TabStop = false;
             this.gbDatosResponsable.Text = "Datos del responsable";
@@ -593,12 +593,12 @@
             this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(584, 518);
+            this.btnRegistrar.Location = new System.Drawing.Point(587, 510);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Padding = new System.Windows.Forms.Padding(10);
-            this.btnRegistrar.Size = new System.Drawing.Size(181, 56);
+            this.btnRegistrar.Size = new System.Drawing.Size(181, 51);
             this.btnRegistrar.TabIndex = 52;
             this.btnRegistrar.Tag = "Registrar";
             this.btnRegistrar.Text = "Registrar";
@@ -611,14 +611,13 @@
             this.btn_altaCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_altaCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_altaCancel.ForeColor = System.Drawing.Color.White;
-            this.btn_altaCancel.Location = new System.Drawing.Point(443, 534);
+            this.btn_altaCancel.Location = new System.Drawing.Point(437, 522);
             this.btn_altaCancel.Name = "btn_altaCancel";
             this.btn_altaCancel.Size = new System.Drawing.Size(131, 39);
             this.btn_altaCancel.TabIndex = 51;
             this.btn_altaCancel.Tag = "Cancelar";
             this.btn_altaCancel.Text = "Cancelar";
             this.btn_altaCancel.UseVisualStyleBackColor = false;
-            this.btn_altaCancel.Visible = false;
             // 
             // error
             // 
