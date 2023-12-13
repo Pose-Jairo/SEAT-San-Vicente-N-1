@@ -190,6 +190,7 @@
             this.btn_docCancel.Tag = "cancelar";
             this.btn_docCancel.Text = "Cancelar";
             this.btn_docCancel.UseVisualStyleBackColor = false;
+            this.btn_docCancel.Click += new System.EventHandler(this.BotonesClick);
             // 
             // btn_docRegistra
             // 

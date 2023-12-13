@@ -50,6 +50,7 @@ namespace Presentacion.Formularios
                 try
                 {
                     carga_tabla(indice);
+                    btn_docUPDATE.Enabled = true;
                 }
                 catch
                 {
@@ -88,12 +89,12 @@ namespace Presentacion.Formularios
             dgvDocenteVistaUPD.DataSource = Metodo.Actualizar(TablaUPD, consultaUPD);
         }
 
-        private void gbDocentesUPD_Enter(object sender, EventArgs e)
+
+        private void BotonesClick(object sender, EventArgs e)
         {
-
+            var button = ((Button)sender);
+            PrincipalFrm.Instancia.AbrirFormulario(button.Name);
         }
-
-        //Metodo que busca la Id de una tabla
    
     }
 }

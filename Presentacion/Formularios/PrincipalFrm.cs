@@ -71,6 +71,12 @@ namespace Presentacion.Formularios
                 case "btnBajaDocente":
                     OpenFormHijo(new BajaDocenteFrm());
                     break;
+                case "btn_docCancel":
+                    OpenFormHijo(new DocentesFrm());
+                    break;
+                case "btn_docCancelUPD":
+                    OpenFormHijo(new DocentesFrm());
+                    break;
             }
         }
 
