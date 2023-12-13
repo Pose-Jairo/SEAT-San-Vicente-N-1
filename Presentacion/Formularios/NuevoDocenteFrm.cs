@@ -24,7 +24,10 @@ namespace Presentacion.Formularios
         Validaciones validacion = new Validaciones();
 
         //diseño de consulta que trae docentes y sus telefonos
-        string consulta = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido, Docente.Email, Docente.Contraseña, Tel_doc.Telefono FROM Docente INNER JOIN Tel_doc ON Tel_doc.Id_docente = Docente.Id_docente";
+        string consulta = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido,Docente.Telefono, Docente.Email, Docente.Contraseña, Docente.EnActividad FROM Docente";
+
+        char activo = '1';
+        
 
         private void NuevoDocenteFrm_Load(object sender, EventArgs e)
         {
@@ -46,15 +49,13 @@ namespace Presentacion.Formularios
             {
 
                 //arma la consulta de docente
-                string AltaDocente = "INSERT INTO Docente (DNI, Nombre, Apellido, Email, Contraseña) VALUES ("
-                + txt_DocDNI.Text + ",'" + txt_docNom.Text + "','" + txt_docApell.Text + "','" + txt_docEmail.Text + "','"
-                + txt_DocContra.Text + "')";
+                string AltaDocente = "INSERT INTO Docente (DNI, Nombre, Apellido,Telefono, Email, Contraseña, EnActividad) VALUES ('"
+                + txt_DocDNI.Text + "','" + txt_docNom.Text + "','" + txt_docApell.Text + "','"
+                + txt_docTel1.Text + "','" + txt_docEmail.Text + "','"
+                + txt_DocContra.Text +"','" + activo + "')";
                 //procede a verificar la consulta y la ejecuta
                 validacion.PruebaAbm(AltaDocente);
-                //arma la consulta de telefonos
-                string AltaTelefonos = "INSERT INTO Tel_doc(Telefono, Id_docente) VALUES(" + txt_docTel1.Text + ", " + ValorCodigo(txt_DocDNI) + ")";
-                //procede a verificar la consulta y la ejecuta
-                validacion.PruebaAbm(AltaTelefonos);
+
                 //actualiza la tabla de docentes
                 dgv_docVista.DataSource = Metodo.Actualizar(Tabla, consulta);
             }

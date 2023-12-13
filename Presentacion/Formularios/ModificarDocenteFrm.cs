@@ -19,11 +19,13 @@ namespace Presentacion.Formularios
 
         Metodos Metodo = new Metodos();
 
+        char activo;
+
         DataTable TablaUPD = new DataTable();
 
         Validaciones validacion = new Validaciones();
 
-        string consultaUPD = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido, Docente.Email, Docente.Contraseña, Tel_doc.Telefono FROM Docente INNER JOIN Tel_doc ON Tel_doc.Id_docente = Docente.Id_docente";
+        string consultaUPD = "SELECT Docente.DNI, Docente.Nombre, Docente.Apellido,Docente.Telefono, Docente.Email, Docente.Contraseña, Docente.EnActividad FROM Docente";
 
         private void ModificarDocenteFrm_Load(object sender, EventArgs e)
         {
@@ -61,21 +63,34 @@ namespace Presentacion.Formularios
             txt_DocDNIUPD.Text = Convert.ToString(dgvDocenteVistaUPD[0, val].Value);
             txt_docNomUPD.Text = Convert.ToString(dgvDocenteVistaUPD[1, val].Value);
             txt_docApellUPD.Text = Convert.ToString(dgvDocenteVistaUPD[2, val].Value);
-            txt_docEmailUPD.Text = Convert.ToString(dgvDocenteVistaUPD[3, val].Value);
-            txt_DocContraUPD.Text = Convert.ToString(dgvDocenteVistaUPD[4, val].Value);
-            txt_docTel1UPD.Text = Convert.ToString(dgvDocenteVistaUPD[5, val].Value);
+            txt_docTel1UPD.Text = Convert.ToString(dgvDocenteVistaUPD[3, val].Value);
+            txt_docEmailUPD.Text = Convert.ToString(dgvDocenteVistaUPD[4, val].Value);
+            txt_DocContraUPD.Text = Convert.ToString(dgvDocenteVistaUPD[5, val].Value);
+            cb_Activo.Checked = Convert.ToBoolean(dgvDocenteVistaUPD[6, val].Value);
         }
 
         private void btn_docUPDATE_Click(object sender, EventArgs e)
         {
             //arma la consulta de UPDATE
-            string UpdateDocente = "UPDATE Docente SET DNI='" +txt_DocDNIUPD.Text 
-            + "',Nombre='" + txt_docNomUPD.Text +"',Apellido='" +txt_docApellUPD.Text
-            + "',Email='" + txt_docEmailUPD.Text +"',Contraseña='" +txt_DocContraUPD.Text
+            if (cb_Activo.Checked) activo = '1';
+            else activo = '0';
+
+            string UpdateDocente = "UPDATE Docente SET DNI='" + txt_DocDNIUPD.Text
+            + "',Nombre='" + txt_docNomUPD.Text
+            + "',Apellido='" + txt_docApellUPD.Text
+            + "',Telefono='" + txt_docTel1UPD.Text
+            + "',Email='" + txt_docEmailUPD.Text
+            + "',Contraseña='" + txt_DocContraUPD.Text
+            + "',EnActividad='" + activo
             + "' WHERE Id_docente=" + Metodo.ValorCodigo(txt_DocDNIUPD) + ";";
 
             validacion.PruebaAbm(UpdateDocente);
             dgvDocenteVistaUPD.DataSource = Metodo.Actualizar(TablaUPD, consultaUPD);
+        }
+
+        private void gbDocentesUPD_Enter(object sender, EventArgs e)
+        {
+
         }
 
         //Metodo que busca la Id de una tabla
