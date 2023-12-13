@@ -12,3 +12,8 @@ E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\bin\Debug\Datos.d
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\bin\Debug\Datos.pdb
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.dll
 E:\Cosas\Programacion\Mis Proyectos\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.pdb
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Datos\bin\Debug\Datos.dll
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Datos\bin\Debug\Datos.pdb
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.dll
+C:\Users\LUK\Desktop\SEAT-San-Vicente-N-1\Datos\obj\Debug\Datos.pdb
